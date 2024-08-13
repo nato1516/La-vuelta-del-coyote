@@ -1,0 +1,2329 @@
+
+/* Zen Dots */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zen+Dots&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+:root{
+    --first-color: hsl(0, 0%, 0%);
+    --h1--tipo-letra:"Zen Dots ",san-serif;
+    --font-size-h1:8rem;
+    --h2-tipo-letra:"Zen Dots ",san-serif;
+    --color--boton-menu: hsl(0,87%,58%);
+    --color-botones-2:hsl(0, 100%, 45%);
+    --font-size:2.5rem;
+    --color-nav:hsla(0,2%,8%,.5);
+    --color-txt:hsl(0, 0%, 94%);
+    --color-hover-2:hsl(0, 100%, 45%);
+
+    --font-family-p:"Roboto",san-serif;
+    --font-size-p:2.5rem;
+}
+.seccion-flex{
+    flex-wrap: wrap;
+    display: flex;
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+.contenedor{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.h1{
+    color: var(--color-txt);
+    font-family: 'Zen Dots',sans-serif;
+    font-size: 6.5rem;
+    font-weight: normal;
+}
+.h2{
+    color: var(--color-txt);
+    font-family: 'Zen Dots',sans-serif;
+    font-size: 5.5rem;
+    font-weight: normal;
+    /* padding: 6rem 0 3rem; */
+}
+.h3{
+    color: var(--color-txt);
+    font-family: 'Zen Dots',sans-serif;
+    font-size: 4.5rem;
+    font-weight: normal;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* padding: 3rem 0; */
+}
+.h4{
+    color: var(--color-txt);
+    font-family: 'Zen Dots',sans-serif;
+    font-size: 3.5rem;
+    font-weight: normal;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /* padding: 3rem 0; */
+}
+.p{
+    color: var(--color-txt);
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+/* ><><><><><><><><><><><><><><><><><><><Botones><><><><><><><><><><><><><><><><><><>< */
+/*=============================================BOTON HEADER=================================================*/
+.Boton-header{
+    text-decoration: none;
+    font-size:var(--font-size-p);
+    font-family: var(--font-family-p);
+    color:var(--color-txt);
+} 
+.btn-he{
+    width:24.7rem;
+    border: 3px solid var(--color--boton-menu);
+    text-align: center;
+    height: 4.9rem;
+    border-radius: 2rem;
+    padding: .7rem 1.5rem;
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+.btn-he:hover{
+    background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f00000, #dc281e);/* Inversión del degradado */
+    transform: translateY(-3px); /* Efecto de elevación */
+    border: 3px solid #b70909;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* ======================================Botones-competencia====================== */
+.btn{
+    width: 200px;
+    border: 3px solid var(--color--boton-menu);
+    height: 49px;
+    text-align: center;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Roboto',sans-serif;
+    color: var(--color-txt);
+    padding-top: .5rem;
+}
+.btn:hover{
+    background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+    background: linear-gradient(to right, #f00000, #dc281e);
+    border: 3px solid #b70909;
+}
+/* ============================BOTONES COMEPETENCIA=========== */
+.btn-paq{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.btn-inscrip{
+    width: 200px;
+    border: 3px solid var(--color--boton-menu);
+    height: 49px;
+    text-align: center;
+    border-radius: 2rem;
+    padding-top: .5rem;
+}
+.btn-ins{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Roboto',sans-serif;
+    color: var(--color-txt);
+}
+
+.btn-com{
+    width:24.7rem;
+    border: 3px solid var(--color--boton-menu);
+    text-align: center;
+    height: 4.9rem;
+    border-radius: 2rem;
+    padding: .7rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Roboto',sans-serif;
+    color: var(--color-txt);
+}
+.btn-com:hover{
+    background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f00000, #dc281e);
+    border: 3px solid #b70909;
+}
+/* boton formulario */
+#btn-contac{
+    margin: 1.5rem 0 6.5rem;
+    
+}
+#btn-enviar{
+    border: 1px solid var(--color-hover-2);
+    padding: .5rem 6rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+#btn-enviar:hover{
+    background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f00000, #dc281e);
+    border: 3px solid var(--color-hover-2);
+}
+/*=============================================HEADER=================================================*/
+header{
+    background: url(../IMG/fondo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.info-header{
+    width: 50%;
+    padding-top: 20%;
+}
+.info-header p{
+    margin: 2.5rem 0;
+}
+.btn-menu{
+    border: 3px solid var(--color-hover-2);
+    padding: .7rem 1.5rem;
+    border-radius: 20px;
+}
+.btn-menu:hover{
+    background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f00000, #dc281e);
+}
+/* Menuuuuu */
+.fondo-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+nav{
+    background-color: rgba(20, 19, 19, 0.5);
+    position: relative;
+    width: 100%;
+}
+.contenedor-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 1rem;
+}
+.nav-list{
+    display: flex;
+}
+.nav-link{
+    list-style: none;
+    margin: 0 .7rem;
+}
+.texto-menu:hover{
+    color: rgb(243, 51, 51);
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+.texto-menu{
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+    font-size: 1.9rem;
+}
+.texto-menu1{
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+    font-size: 1.9rem;
+}
+/* Menu responisvo */
+.x{
+    background-color: var(--color-hover-2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 50px;
+    display: none;
+}
+.menu__responsivo{
+    display: none;
+}
+.bx-x{
+    color: #fff;
+}
+.bx-menu-alt-right{
+    color: #fff;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* SOBRE NOSOTROS */
+
+.nosotros{
+    background-color: var(--first-color);
+}
+.informacion{
+    margin: 1rem 0;
+}
+.informacion h2{
+    padding-top: 6rem;
+}
+.informacion h3{
+    margin: 3rem 0;
+}
+.acerca_de_nosotros{
+    display: flex;
+}
+.imagen-nosotros{
+    display: flex;
+    place-items: center;
+}
+.historia{
+    margin-right: 2rem;
+    line-height: 1.5;
+}
+/* ///////////////////Personas/////////////////// */
+.persona-nosotros{
+    text-align: center;
+    width: 344px;
+    margin:  0 .5rem ;
+}
+.texto-persona{
+    width: 300px;
+    margin: 0 auto;
+    padding: 1rem 0 3rem;
+}
+.persona-nosotros h4{
+    margin-top: 1rem;
+}
+.personas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nosotros h3{
+    margin-top: 3rem;
+}
+.persona-titulo{
+    margin: 3rem 0 4rem;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* ============================================================================================================
+======================================EVENTOS==============================================================
+============================================================================================================ */
+.Eventos{
+    background-color: var(--first-color);
+}
+/* Eventos */
+.Eventos h2{
+    padding-top: 6rem;
+}
+/* Conciertos */
+#concierto{
+    background: url(../IMG/Conciertos.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 710px;
+    margin-top: 2rem 
+}
+.info-eventos h3{
+    padding-top: 2rem;
+}
+.info-eventos h4{
+    margin: 1.5rem 0;
+}
+.datos{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+.cantantes p{
+    line-height: 1.6;
+}
+.hora p{
+    line-height: 1.6;
+}
+.eventos_arriba{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 144rem; */
+}
+/* ciclistas */
+.autografo{
+    background: url(../IMG/autografo.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 680px;
+    height: 710px;
+    margin: 2rem .5rem 0;
+}
+.autografo h4{
+    margin-bottom: 4.9rem;
+}
+.ciclistas{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+.autografo h3{
+    margin-bottom: 3rem;
+}
+.datos-auto{
+    margin-bottom: 4.9rem;
+}
+/* Toldos */
+#toldos{
+    background: url(../IMG/toldos.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1010px;
+    height: 651.1px;
+    margin: 0 auto;
+}
+/* Logo y texto Treck */
+#Trek{
+    width: 959px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0rem 3rem;
+}
+.logo-trek{
+    width: 279px;
+    height: 54px;
+}
+.texto-toldos{
+    width: 596px;
+}
+/* pinarello */
+#pinarello{
+    display: flex;
+    justify-content: space-between;
+    width: 959px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+#logo-pina{
+    width: 279px;
+    display: flex;
+    justify-content: center;
+}
+/* bikestation */
+#bikestation{
+    display: flex;
+    justify-content: space-between;
+    width: 959px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+#toldos h3{
+    margin-top: 1.5rem;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* ============================================================================================================
+======================================CICLISTAS INVITADOS==============================================================
+============================================================================================================ */
+#ciclistas{
+    background-color: var(--first-color);
+}
+
+#ciclistas-invitados{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    column-gap: 2.2rem;
+    row-gap: 10px;
+}
+.tex-ciclis{
+    padding: 6rem 0 3rem;
+}
+/* caracteristcias cartas del hover  */
+.tamaño-card{
+    width: 46.4rem;
+    height:34.8rem ;
+}
+.card{
+    width: 46.4rem;
+    height: 42.4rem;
+    display: block;
+    /* margin: 10rem auto; */
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 4, 4, 0.61);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 35rem;
+    /* align-items: center; */
+    opacity: 0;
+    transition: 0.3s;
+}
+.img-text{
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+/* Card de matew */
+.card-7{
+    width: 46.4rem;
+    height: 42.4rem;
+    display: block;
+    /* margin: 10rem auto; */
+    margin: 1rem 0;
+    position: relative;
+    cursor: pointer;
+}
+.card-7 img{
+    width: 100%;
+    height: auto;
+}
+.overlay-7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 4, 4, 0.61);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 30rem 3rem 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.img-text-7{
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+    text-align: center;
+
+}
+.card-7:hover .overlay-7{
+    opacity: 1;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* ============================================================================================================
+======================================CIRCUITOS==============================================================
+============================================================================================================ */
+.circuitos{
+    background-color: var(--first-color);
+}
+.datoss-img{
+    width: 95px;
+}
+.circuitos h3{
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+.circuitos h2{
+    padding-top: 6rem;
+}
+.info-coyoteE{
+    display: flex;
+}
+.img-web-CE{
+    margin-right: 2rem;
+}
+.txt-coyoteE p{
+    margin-bottom: 9.3rem;
+    line-height: 1.65;
+}
+.botones-Extremo{
+    display: flex;
+    justify-content: space-between;
+}
+#datos-coyoteE{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+.titulo-extremo{
+    margin: 3rem;
+}
+.infovectores{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+.foto-alimetriaA{
+    display: flex;
+    justify-content: center;
+}
+/*===================== Datos del circuito Coyote Celestial===================== */
+#coyoteC{
+    background-color: var(--first-color);
+}
+#coyoteC h3{
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+.informacion-cele{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.informacion-cele p{
+    margin-bottom: 3rem;
+    line-height: 1.5;
+}
+.informacion-cele h4{
+    margin-bottom: 3rem;
+}
+.img-coyore-cele{
+    margin-right: 2rem;
+    width: 587px;
+    height: 581px;
+}
+.vectores-cele{
+    display: flex;
+    justify-content: space-between;
+}
+.datos-compe{
+    display: flex;
+    place-items: center;
+}
+.pareja-vector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 173px;
+}
+.btn-alti-Cele{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.btn-alti-Cele h4{
+    margin-bottom: 3rem;
+}
+#alti-cele-web{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.btn-Cele{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+}
+/*===================== Datos del circuito RAFAGA DEL COYOTE===================== */
+#CoyoteR{
+    background-color: var(--first-color);
+}
+#info-coyoteR{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.txt-coyoteR p{
+    margin: 2rem 0;
+    line-height: 2;
+    display: flex;
+    text-align: center;
+}
+.vectoresR{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0;
+    justify-content: space-between;
+}
+.datos-compe{
+    display: flex;
+    width: 200px;
+    place-items: center;
+}
+.datos-compe p{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#CoyoteR h3{
+    margin: 3rem 0;
+}
+.alti-boton-rafa{
+    display: flex;
+    flex-direction: column;
+}
+.alti-boton-rafa h4{
+    margin: 2rem 0 3rem;
+}
+
+#img-alti-Rafa-web{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: 1rem 0 3rem;
+}
+.botones-Rafa{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/*===================== PAQUETES===================== */
+/*=========================================================*/
+/* Texto de los paquetes */
+.paquete-coyoteE p{
+    line-height: 2.5;
+    padding: 2.5rem 0;
+}
+.paquete-coyoteE h2{
+    padding: 7rem 0 3rem;
+}
+.info-impoPA{
+    font-family: 'Roboto',san-serif;
+    font-size: 2.5rem;
+    color:#ff0000;
+    font-weight: 300;
+}
+/*===================== COYOTE LEGENADARIO===================== */
+.comida-hospedajel{
+    background-color: var(--first-color);
+}
+.comida-hospedajel h4{
+    margin: 3rem 0;
+}
+#hospedaje-L{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#Comida-L{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trasnsporte{
+    width: 100%;
+    margin: 2rem 0;
+}
+.empresas-trans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.medi-tras{
+    background-color: var(--first-color);
+}
+
+.medi-tras h4{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+/* ==========================informacion de la card de los paquetes=========== */
+.card-paquetes{
+    width: 40rem;
+    height: 25rem;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    /* margin-bottom: 2rem; */
+}
+.card-paquetes img{
+    width: 100%;
+    height: 100%;
+}
+.tamaño-card{
+    margin: 0 .5rem;
+}
+.overlay-paquetes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(13, 4, 4, 0.61);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6.5rem 2.5rem;
+    transition: 0.3s;
+}
+.img-text-paquetes{
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+.card-paquetes:hover .overlay-paquetes{
+    opacity: 1;
+}
+
+/* Paquete coyote explosivo */
+.paquete-coyoteE{
+    background-color: #060000;
+}
+.paquete-coyoteE h3{
+    margin: 3rem 0 1rem;
+}
+.comida-hospedajeE{
+    background-color: var(--first-color);
+}
+#hospedaje-E{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-right: 2rem;
+}
+#hospedaje-E h4{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+#Comida-E h4{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.tamaño-cardE{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+#Comida-E{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.hopedaje-y-comidaE{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* ============================Rebelde=================================== */
+#CoyoteR h3{
+    margin-top: 3rem 0 1rem;
+}
+.card-paquetesR{
+    width: 40rem;
+    height: 25rem;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.card-paquetesR img{
+    width: 100%;
+    height: 100%;
+}
+.hopedaje-y-comidaR{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#hospedaje-R{
+    margin-right: 1rem ;
+    width: 624px;
+}
+#comida-R{
+    width: 624px;
+}
+.tamaño-cardR{
+    margin: 0 auto;
+}
+.overlay-paquetesR{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(13, 4, 4, 0.61);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6.5rem 2.5rem;
+    transition: 0.3s;
+}
+.card-paquetesR:hover .overlay-paquetesR{
+    opacity: 1;
+}
+.empresas-transR{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.hopedaje-y-comidaR{
+    display: flex;
+    justify-content: space-between;
+}
+.card-paquetesR{
+    margin: 0 auto;
+}
+
+.tamaño-cardR{
+    margin: 0 auto;
+    width: 100%;
+}
+.empresas-transR{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.btn-paqR{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:2rem 0 ;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* Camiseta */
+.camisa-oficial{
+    background-color: var(--first-color);
+}
+.camisa{
+    display: flex;
+    justify-content: space-between;
+}
+.camisa-oficial h2{
+    padding: 6rem 0 3rem;
+}
+.camisa-oficial h3{
+    margin: 3rem 0 2rem;
+}
+.img-camisas{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hombre{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mujer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.camisaas{
+    margin: 2rem 1rem;
+    width: 277px;
+    height: 346px;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* ============================================Inscripciones============================ */
+.inscripciones{
+    background-color: var(--first-color);
+}
+.inscripciones h2{
+    padding: 6rem 0 3rem;
+}
+#card-de-inscripcion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card-inscripcion h3{
+    padding: 4rem 0 3rem;
+}
+/* caracteristicas del hover */
+.card-inscripcion{
+    width: 46rem;
+    height: 61rem;
+    border: .5rem solid var(--color-hover-2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 2rem .5rem;
+}
+.card-inscripcion h3{
+    padding: 4rem 0 3rem;
+}
+.card-inscripcion p{
+    text-align: center;
+    margin-top: 2rem;
+}
+/* hover card */
+.card-inscripcion:hover{
+    background-color: var(--color-hover-2);
+}
+.insrip{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 46rem;
+}
+.boton-ins{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* ===========================================premiaones============================== */
+.premiaciones{
+    background-color: var(--first-color);
+}
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.premiaciones h2{
+    padding: 6rem 0 3rem;
+}
+.premiaciones-card{
+    width: 44.6rem;
+    height: 71.1rem;
+    margin: 2rem .5rem;
+}
+.premio-card1{
+    background-color:var(--color-hover-2);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+}
+.premio-card1 h3{
+    padding-top: 30rem;
+}
+.premio-card2{
+    z-index: -1;
+    display: none;
+    border: .5rem solid var(--color-hover-2);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.premio-card2 h3{
+    padding: 6rem 0 3rem;
+}
+.premio-card2 p{
+    line-height:4rem;
+    margin: 2rem 1.5rem;
+}
+.premiaciones-card:hover .premio-card1{
+    display: none;
+}
+.premiaciones-card:hover .premio-card2{
+    display: block;
+    
+}
+
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+/* ===================================================Carrusel===================================================================== */
+
+/* Premios  */
+.premios-compe{
+    background-color: var(--first-color);
+}
+@font-face {
+    font-family: 'flexslider-icon' ;
+    src: url('../fonts/flexslider-icon.eot');
+    src: url('../fonts/flexslider-icon.eot?efix') format('embedded-opentype'),url('../fonts/flexslider-icon.woff') format('woff'),url('../fonts/flexslider-icon.ttf') format('truetype'),url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.flexslider{
+    width: 100%;
+    position: relative;
+}
+.slides{
+    overflow: hidden;
+}
+/* ----------------------------- */
+.slides, .flex-control-nav , .flex-direction-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-control-nav{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 999;
+    background-color: transparent;
+    padding:1rem 0;
+    /* background-color: #FB6565; */
+}
+
+.flex-control-nav li{
+    display: inline-block;
+    margin: 0 6px;
+    /* background-color: aquamarine; */
+}
+.flex-control-nav li a{
+    display: block;
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    /* crear una sangria en la primer linea de un parrafo */
+    text-indent: -9999px;
+    /* background-color: blueviolet; */
+}
+
+.flex-control-nav li a:hover{
+    background-color: #FB6565;
+}
+
+.flex-control-nav li a.flex-active{
+    background-color: #F13535;
+}
+.flex-direction-nav a{
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    /* top: 50%; */
+    bottom: 40%;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    /* background-color: blue; */
+}
+
+.flex-direction-nav .flex-prev{
+    left: 0;
+}
+.flex-direction-nav .flex-next{
+    right: 0;
+}
+
+.flex-direction-nav a::before{
+    font-family: 'flexslider-icon';
+    font-size: 40px;
+    display: inline-block;
+    /* es un icono de ls fuente */
+    content: '\f001';
+    color: #F13535;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, rgba(255, 255, 255,.3));
+}
+
+.flex-direction-nav a.flex-next::before{
+    font-family: 'flexslider-icon';
+    font-size: 40px;
+    display: inline-block;
+    /* es un icono de ls fuente */
+    content: '\f001';
+    color: #F13535;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, rgba(255, 255, 255,.3));
+}
+.flex-direction-nav a.flex-next::before{
+    content: '\f002';
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev{
+    opacity: 0.9;
+    left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next{
+    opacity: 0.9;
+    right: 10px;
+}
+.premio{
+    display: flex;
+    flex-direction: column;
+}
+.info-premio{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.info-premio p{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+.info-premio h3{
+    margin: 2rem 0 1rem;
+}
+.prueba{
+    height: 1340px;
+}
+.numero{
+    font-family: "Zen Dots", sans-serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+}
+.premio h2{
+    padding-top: 6rem;
+}
+/* <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
+
+/* ===============================Contacto=============================================== */
+.contacto{
+    background-color: var(--first-color);
+}
+.controls {
+    width: 46.6rem;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #F13535;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem .5rem 1.6rem;
+}
+.mensaje{
+    width: 85.83%;
+    height: 200px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid #F13535;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}   
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+}
+    
+.form-register a {
+    text-decoration: none;
+}
+    
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+    
+#articulo-contacto{
+    width:  85.83%;
+    text-align: center;
+    margin: 0 auto;
+}
+#caja-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 9rem;
+}
+#txt-con{
+    text-align: center;
+    width: 100%
+}
+#txt-con h2{
+    padding-top: 4rem;
+}
+#txt-con p{
+    font-size: 2.5rem;
+    font-family: 'Roboto',sans-serif ;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 7.1rem;
+}
+
+/* ==============================================FOOTER======================================= */
+footer{
+    background-color: var(--first-color);
+
+}
+.nav-menuss{
+    width: 133px;
+}
+.nav-linkf{
+    padding: 1rem 0;
+}
+.info__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.parejas-redes{
+    display: flex;
+    justify-content: space-between;
+}
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.red-1{
+    margin-right: 3rem;
+}
+.cookies{
+    display: flex;
+    justify-content: center;
+}
+.cookies p{
+    margin: 1.5rem 0;
+}
+#logo-footer{
+    width: 265px;
+    height: 286px;
+    display: flex;
+    justify-content: center;
+}
+/* ========================================================================================================
+========================================================================================================
+========================================================================================================
+
+=                                     GALERIA                                                             =
+
+========================================================================================================
+========================================================================================================
+======================================================================================================== */
+.fondo-galeria{
+    background: url(../IMG/fondo-galeria.png) no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.info-galeria{
+    padding-top: 20%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#galeria{
+    background-color: #060000;
+}
+
+#Galeria-fotos{
+    background-color: #060000;
+    padding: 2rem 0;
+}
+
+.h1-galeria{
+    color: #fff;
+    font-size: 7rem;
+    font-family: 'Zen Dots',sans-serif ;
+    text-align: center;
+    margin-top: 30rem;
+    font-weight: normal;
+}
+#galeria h2{
+    padding-top: 4rem;
+}
+#Galeria-fotos{
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    column-gap: 2rem;
+    row-gap: 95px;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+#Galeria-fotos img{
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+#Galeria-fotos > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0,0, .5);
+}
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 4, 4, .97);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: scale(0);
+    transition: trasform .3s ease-in-out ;
+}
+.light-box img{
+    width: 55vw;
+    max-height: 75vh;
+}
+.light-box:target{
+    transform: scale(1);
+}
+.cierre{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    background: #F13535;
+    color: #fff;
+    text-decoration: none;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.advance{
+    padding-top: 9px;
+    width: 50px;
+    height: 50px;
+    background: #F13535;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 30px;
+    /* z-index: 8000; */
+}
+/* ========================================================================================================
+========================================================================================================
+========================================================================================================
+
+=                                              Inscripciones                                           =
+
+========================================================================================================
+========================================================================================================
+======================================================================================================== */
+.fondo-inscripcion{
+    background: url(../IMG/fondo-inscipcion.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info-inscrip{
+    padding-top: 25%;
+}
+#formulario{
+    background-color: var(--first-color);
+}
+#formulario h2{
+    padding-top: 6rem;
+}
+.nombre-compro-circui{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+#coreo-paq{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+.control{
+    width: 35rem;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #F13535;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 3rem .5rem 1.6rem;
+}
+select{
+    width: 35rem;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #F13535;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 3rem .5rem 1.6rem;
+}
+#paquete{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+option{
+    width: 35rem;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #F13535;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 3rem .5rem 1.6rem;
+}
+.opcion-formulario{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+#txt-formu p{
+    margin-top: 2rem;
+}
+#btn-enviar{
+    border: 1px solid var(--color-hover-2);
+    padding: .5rem 6rem;
+    text-align: center;
+    border-radius: 2rem;
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+}
+#btn-enviar:hover{
+    background: -webkit-linear-gradient(360deg, #ff0000,#e82626,#ee4444,#ff7a7a);
+    background: linear-gradient(360deg, #ff0000,#e82626,#ee4444,#ff7a7a);
+    border: 3px solid var(--color-hover-2);
+}
+.btn-caja{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1670px ) {
+    header{
+        width: 100%;
+    }
+
+    /* menu  */
+    .menu{
+        justify-content: space-between;
+    }
+    .opcion-Menu{
+        width: 9rem;
+    }
+    nav a{
+        font-size: 1.5rem;
+    }
+    .logo-img{
+        width:70px;
+        z-index: 1;
+        margin-right: 20px;
+    }
+    .container{
+        width: 93%;
+    }
+    .p{
+        font-size: 2rem;
+    }
+    .h2{
+        font-size: 5.5rem;
+    }
+    .h3{
+        font-size: 4.5rem;
+    }
+    .h4{
+        font-size: 3.5rem;
+    }
+    /* acerca de nosotros */
+    .acerca_de_nosotros{
+        display: block;
+    }
+    .acerca_de_nosotros p{
+        text-align: center;
+    }
+    .nosotros h3{
+        text-align: center;
+    }
+    .imagen-nosotros{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .personas{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* ==============Eventos================== */
+    .eventos_arriba{
+        justify-content: center;
+    }
+    /* ciclistas */
+    #ciclistas-invitados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /*=====================Imagenes de las competencias====================================
+    ====================================================================================*/
+    /*Extremo*/
+    .info-coyoteE{
+        flex-direction: column;
+    }
+    .img-web-CE{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .botones-Extremo{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .img-compe-Extre{
+        width: 550px;
+    }
+    .altimetria-web-extre{
+        width: 500px;
+    }
+    /*Celestial*/
+    .img-celee{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .informacion-cele p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .vectores-cele{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .informacion-cele{
+        flex-direction: column;
+    }
+    .img-competenciaCele{
+        width: 600px;
+    }
+    .img-coyoteCele{
+        width: 100%;
+    }
+    #alti-cele-web{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-Cele{
+        width: 80%;
+    }
+    .img-alti{
+        width: 500px;
+    }
+    /*Rafaga del coyote*/
+    .img-compe-Rafa{
+        width: 600px;
+    }
+    .altimetria-rafa{
+        width: 500px;
+    }
+    /* ===========================================Botones=====================================
+    ======================================================================================= */
+    /* Botones competencia  */
+    .btn{
+        width:16rem;
+        padding: 7px 5px;
+    }
+
+    .botones-compe a{
+        font-size: 2.2rem;
+    }
+    .btn-menu{
+        width: 10.5rem;
+    }
+    .boton-txt{
+        font-size:1.8rem;
+        font-family:'Roboto',sans-serif;
+    } 
+    /*comida-hospedaje y salud*/
+    .card:target .overlay{
+        opacity: 1;
+    }
+    .tamaño-card{
+        margin-top: 2rem;
+    }
+    .comida-hospedajeL h4{
+        display: flex;
+        justify-content: center;
+    }
+    #Comida-L{
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    #hospedaje-L{
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    .btn-paq{
+        width: 400px;
+        margin: 2rem 0;
+    }
+    /* Trasnsporte y Salud */
+    .img-empresas{
+        margin: 2rem .5rem 0;
+    }
+    .empresas-trans{
+        justify-content: space-evenly;
+    }
+    /* comida y hospedaje E */
+    .hopedaje-y-comidaE{
+        flex-direction: column;
+    }
+    .card-coyote-exploE{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #hospedaje-E{
+        margin: initial;
+    }
+    .tamaño-cardE{
+        margin: initial;
+    }
+    #Comida-E{
+        margin: initial;
+    }
+    /* texto de los paquetes */
+    .tetxo-paquetes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    /* camisa */
+    .camisa-oficialimg{
+        justify-content: center;
+        justify-content: center;
+    }
+    /* inscripciones */
+    #premiacion-extremo{
+        width: 100%;
+        margin-right: 0;
+    }
+    .premiacion-rafaga{
+        width: 100%;
+        margin-left: 0;
+    }
+    #card{
+        display: grid;
+        row-gap: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+    #card-de-inscripcion{
+        display: grid;
+        row-gap: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+    /* carrusel */
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .slides{
+        width:100%;
+    }
+    .premios{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 100%;
+    }
+    .prueba{
+        height: 1250px;
+    }
+    .contenedor-pre{
+        width: 100%;
+        height: 135rem;
+        margin: 0 auto;
+    }
+    .img-premio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+    .imagen-1-carrusel-1{
+        width: 600px;
+    }
+    .textos-premios{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .premios h3{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .textos-premios p{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* Galeria */
+    #Galeria-fotos{
+        grid-template-columns: repeat(3 ,1fr);
+    }
+    .light-box img{
+        width: 80vw;
+        max-height: 75vh;
+    }
+    
+}
+
+@media screen and (max-width: 1010px) {
+    .h1{
+        font-size: 6rem;
+    }
+    .h2{
+        font-size: 5rem;
+        margin: 0;
+    }
+    .h3{
+        font-size: 4rem;
+    }
+    .h4{
+        font-size: 3.5rem;
+    }
+    .p{
+        font-size: 2rem;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .h4{
+        font-size: 3rem;
+    }
+    .p{
+        font-size: 2rem;
+    }
+    /* header */
+    header{
+        background: url(../IMG/atablet/fondo\ tablet.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .info-header{
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 35%;
+    }
+    .info-header p{
+        margin: 3rem 0 0;
+        line-height: 2;
+    }
+    .boton{
+        justify-content: center;
+        display: flex;
+        margin-top: 3rem;
+    }
+    /* ===================MENU=================== */
+    .x{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+    .x,
+    .menu-hamburguesa{
+        display: flex;
+        font-size: 1.5rem;
+        color: var(--title-color);
+        cursor: pointer;
+    } 
+    .nav-menu{
+        background-color: #4d0a0a;
+        width: 20%;
+        position: fixed;
+        padding-block: 4.5rem 3.5rem;
+        box-shadow: 0 4px 16px hsla(22, 100%, 8%,.2);
+        top: 0;
+        right: -10000%;
+        height: 100vh;
+    } 
+    .nav-list{
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 4rem 5rem;
+    }
+    .btn-menu{
+        border: 0px solid var(--color-hover-2);
+        padding: 0;
+        border-radius: 0;
+    }
+    /* Opciones del menu  */
+    .menu__responsivo{
+        display: flex;
+        cursor: pointer;
+    }
+    .show-menu{
+        right: 0;
+    }
+    /* ciclistas */
+    #ciclistas-invitados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* eventos */
+    .eventos_arriba{
+        justify-content: space-evenly;
+    }
+    #concierto{
+        margin-bottom: 2rem;
+    }
+    /* Toldos */
+    #toldos{
+        background: url(../IMG/toldos.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 700px;
+        height: 750px;
+    }
+    #Trek{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    #Trek p{
+        margin-top: 1rem;
+    }
+    #pinarello{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    #logo-pina{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #pinarello p{
+        margin-top: 1rem;
+    }
+    #bikestation{
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    /* CIRcuitos */
+    .info-coyoteE{
+        display: block;
+    }
+    .info-coyoteE p{
+        text-align: center;
+    }
+    .img-web-CE{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #datos-coyoteE{
+        display: block;
+    }
+    #foto-alimetriaA{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #vectores{
+        margin: 0;
+        width: 100%;
+    }
+    #info-vectoresE{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .derecha{
+        width: 50%;
+    }
+    .datos-compe{
+        margin: 2rem 0;
+    }
+    /* celestial */
+    .info-coyote-Cele{
+        display: block;
+    }
+    .info-coyote-Cele p{
+        text-align: center;
+    }
+    .txt-cele{
+        width: 100%;
+    }
+    .img-competenciaCele{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .img-coyoteCele{
+        width: 60%;
+    }
+    #alti-cele-web{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* rafaga del coyote */
+    #info-coyoteR{
+        display: block;
+    }
+    #info-coyoteR p{
+        text-align: center;
+    }
+    #Img-coyoteR{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    #datos-coyoteR{
+        display: block;
+    }
+    #foto-alimetriaR{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* paquetes */
+    #hospedaje-L{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #comidaL{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .tamaño-card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 400px;
+    }
+    .hopedaje-y-comidaR{
+        justify-content: center;
+    }
+
+    .abajo{
+        margin-top: 1.5rem;
+    }
+    /* explosivo */
+    #Parejas-comida-hospedaje{
+        display: block;
+        width: 100%;
+    }
+    .hospedaje-comidaExplo{
+        height: 1650px;
+    }
+    .img-camisas{
+        justify-content: center;
+    }
+    /* =========================Carrusel============================= */
+    .premio h2{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .imagen-1-carrusel-1{
+        width: 700px;
+        height: 613px;
+    }
+    .imagen-1-carrusel-2{
+        width: 700px;
+        height: 613px;
+    }
+    .flex-direction-nav a{
+        bottom: 27%;
+    }
+    .info-premio h3{
+    margin: 2rem 0 .5rem;
+    padding-top: 6rem;
+    }
+    .prueba{
+        height: 149rem;
+    }
+    /* rebelde */
+    #comida-hospedajeR{
+        width: 100%;
+        display: block;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    /* Galeria */
+    #Galeria-fotos{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    #Galeria-fotos a{
+        display: flex;
+        justify-content: center;
+    }
+    .light-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width:96%;
+    }
+    .h1{
+        font-size: 5.5rem;
+    }
+    .h2{
+        font-size: 5rem;
+        margin: 0;
+    }
+    .h3{
+        font-size: 4rem;
+    }
+    .h4{
+        font-size: 3.5rem;
+    }
+    .p{
+        font-size: 2.5rem;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .h4{
+        font-size: 3rem;
+    }
+    .p{
+        font-size: 2rem;
+    }
+    /* Nosotros */
+    .img-nosotross{
+        width: 500px;
+        height: auto;
+    }
+    .personas{
+        justify-content: center;
+    }
+    .persona-nosotros{
+        width: 500px;
+    }
+    .texto-persona{
+        width: 370px;
+    }
+    /* Eventos */
+    #concierto{
+        width: 500px;
+        height: 580px;
+    }
+    .datos{
+        width: 450px;
+        
+    }
+    .info-eventos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 450px;
+        margin: 0 auto;
+    }
+    .autografo h4{
+        margin-bottom: 2.5rem;
+    }
+    .autografo{
+        width: 500px;
+        height: 580px;
+    }
+    .ciclistas{
+        width: 100%;
+    }
+    .datos-auto{
+        width: 450px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    #toldos{
+        width: 500px;
+        height: 800px;
+    }
+    #Trek{
+        width: 450px;
+    }
+    .texto-toldos{
+        width: 450px;
+    }
+    .logo-pin{
+        width: 113px;
+        height: 100px;
+    }
+    /* Ciclistas */
+    .tex-ciclis{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    /* circuitos */
+    .img-compe-Extre{
+        width: 500px;
+    }
+    .img-coyore-cele{
+        width: 500px;
+        margin: 0;
+    }
+    .img-compe-Rafa{
+        width: 500px;
+    }
+    .vectoresEctre{
+        display: flex;
+        flex-direction: column;
+    }
+    .datos-compe{
+        display: flex;
+        justify-content: center;
+    }
+    .infovectores{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .vectoresR{
+        justify-content: space-evenly;
+    }
+    /* Carrusel */
+    .imagen-1-carrusel-1{
+        width: 500px;
+        height: 438px;
+    }
+    .imagen-1-carrusel-2{
+        width: 500px;
+        height: 438px;
+    }
+    /* ===============================Carrusel================================= */
+    .prueba{
+        height: 1250px;
+    }
+    .flex-direction-nav a{
+        bottom: 35%;
+    }
+    .numero{
+        font-size: 80px;
+    }
+    /* inscripciones */
+    .nombre-compro-circui{
+        padding: 3rem 0;
+    }
+    #coreo-paq{
+        padding: 3rem 0;
+    }
+    .info-inscrip{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 35%;
+    }
+    #txt-formu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Galeria */
+    .info-galeria{
+        padding-top: 40%;
+    }
+}
+
