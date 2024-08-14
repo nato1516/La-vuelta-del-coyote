@@ -208,6 +208,12 @@ header{
     padding: .7rem 1.5rem;
     border-radius: 20px;
 }
+.texto-celular-peque{
+    display: none;
+}
+.texto-celular-peque{
+    display: none;
+}
 .btn-menu:hover{
     background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f00000, #dc281e);
@@ -499,7 +505,6 @@ nav{
     font-size: 4rem;
     font-family: "Zen Dots", sans-serif;
     font-weight: normal;
-
 }
 .card:hover .overlay{
     opacity: 1;
@@ -1915,9 +1920,9 @@ option{
     } 
     .nav-menu{
         background-color: #4d0a0a;
-        width: 20%;
+        width: 80%;
         position: fixed;
-        padding-block: 4.5rem 3.5rem;
+        padding-block: 5.5rem 3.5rem;
         box-shadow: 0 4px 16px hsla(22, 100%, 8%,.2);
         top: 0;
         right: -10000%;
@@ -1927,7 +1932,7 @@ option{
         flex-direction: column;
     }
     .nav-link{
-        margin: 4rem 5rem;
+        margin: 2rem 5rem;
     }
     .btn-menu{
         border: 0px solid var(--color-hover-2);
@@ -2162,93 +2167,216 @@ option{
 }
 
 @media screen and (max-width: 768px) {
+    .logo-img{
+        width: 50px;
+        height: 53px;
+    }
     .container{
         width:96%;
     }
     .h1{
-        font-size: 5.5rem;
+        font-size: 3rem;
     }
     .h2{
-        font-size: 5rem;
+        font-size: 2.5rem;
         margin: 0;
     }
     .h3{
-        font-size: 4rem;
+        font-size: 2.3rem;
     }
     .h4{
-        font-size: 3.5rem;
-    }
-    .p{
-        font-size: 2.5rem;
+        font-size: 1.9rem;
     }
     .container{
         width: 90%;
         height: auto;
     }
-    .h4{
-        font-size: 3rem;
-    }
     .p{
-        font-size: 2rem;
+        font-size: 1.7rem;
+    }
+    /* =========================================BOTONES===================== */
+    .Boton-header{
+        text-decoration: none;
+        font-size:18px;
+        font-family:'Roboto',sans-serif;
+        color:var(--color-txt);
+    } 
+    .btn-he{
+        width:14rem;
+        border: 3px solid var(--color--boton-menu);
+        text-align: center;
+        height: 3.9rem;
+        border-radius: 2rem;
+        padding: .7rem 1.5rem;
+        transition: background 0.4s ease, transform 0.3s ease;
+    }
+    .btn-he:hover{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f00000, #dc281e);/* Inversión del degradado */
+        transform: translateY(-3px); /* Efecto de elevación */
+        border: 3px solid #b70909;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    }
+    .btn{
+        width: 115px;
+        border: 3px solid var(--color--boton-menu);
+        height: 37px;
+        text-align: center;
+        border-radius: 2rem;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Roboto',sans-serif;
+        color: var(--color-txt);
+        padding-top: .5rem;
+    }
+    .btn:hover{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+        background: linear-gradient(to right, #f00000, #dc281e);
+        border: 3px solid #b70909;
+    }
+    .btn-paq{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .btn-inscrip{
+        width: 118px;
+        border: 3px solid var(--color--boton-menu);
+        height: 36px;
+        text-align: center;
+        border-radius: 2rem;
+        padding-top: .5rem;
+    }
+    .btn-ins{
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Roboto',sans-serif;
+        color: var(--color-txt);
+    }
+    .btn-com{
+        width:120px;
+        border: 3px solid var(--color--boton-menu);
+        text-align: center;
+        height: 3.9rem;
+        border-radius: 2rem;
+        padding: .6rem 1rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Roboto',sans-serif;
+        color: var(--color-txt);
+    }
+    .btn-com:hover{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f00000, #dc281e);
+        border: 3px solid #b70909;
+    }
+    /* banner */
+    .info-header{
+        width: 100%;
+        padding-top: 23%;
+    }
+    .info-header p{
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+    }
+    header{
+        background: url(../IMG/atablet/banner\ cel.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .boton{
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 2rem;
     }
     /* Nosotros */
+    .persona-titulo{
+        width: 300px;
+    }
+    .informacion h2{
+        padding: 2rem 0 1rem;
+    }
+    .informacion h3{
+        margin: 1rem 0;
+    }
     .img-nosotross{
-        width: 500px;
+        width: 450px;
         height: auto;
     }
     .personas{
         justify-content: center;
     }
     .persona-nosotros{
-        width: 500px;
+        width: 265px;
     }
     .texto-persona{
-        width: 370px;
+        width: 250px;
+    }
+    .personas-img{
+        width: 265px;
     }
     /* Eventos */
     #concierto{
-        width: 500px;
-        height: 580px;
+        width:450px;
+        height: 480px;
     }
     .datos{
-        width: 450px;
+        width: 430px;
         
+    }
+    .eventos_arriba{
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
     }
     .info-eventos{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 450px;
+        width: 430px;
         margin: 0 auto;
     }
     .autografo h4{
         margin-bottom: 2.5rem;
     }
     .autografo{
-        width: 500px;
-        height: 580px;
+        width:450px;
+        height: 450px;
     }
     .ciclistas{
         width: 100%;
     }
     .datos-auto{
-        width: 450px;
+        width: 430px;
         margin: 0 auto;
         padding: 2rem 0;
     }
     #toldos{
-        width: 500px;
-        height: 800px;
+        width: 450px;
+        height: 500px;
     }
     #Trek{
-        width: 450px;
+        width: 430px;
+    }
+    .logo-trek{
+        width: 80px;
+        height: 16px;
     }
     .texto-toldos{
-        width: 450px;
+        width: 430px;
     }
     .logo-pin{
-        width: 113px;
-        height: 100px;
+        width: 80px;
+    }
+    .logo-bike-img{
+        width: 150px;
+        height: 40px;
     }
     /* Ciclistas */
     .tex-ciclis{
@@ -2256,16 +2384,81 @@ option{
         justify-content: center;
         text-align: center;
     }
+    .card{
+        width: 380px;
+        height: 346.56px;
+        border-radius: 1rem;
+    }
+    .overlay{
+        text-align: center;
+        padding: 14rem 0 0;
+        border-radius: 1rem;
+        height: 348px;
+    }
+    .img-text{
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Zen Dots", sans-serif;
+        font-weight: normal;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .card:target .overlay{
+        opacity: 1;
+    }
+    /* Card de matew */
+    .card-7{
+        width: 380px;
+        height: 346.56px;
+        display: block;
+    }
+
+    .card-7 img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay-7{
+        text-align: center;
+        height: 348px;
+        padding: 14rem 0 0;
+    }
+    .img-text-7{
+        color: #fff;
+        font-size: 3rem;
+        font-family: "Zen Dots", sans-serif;
+        font-weight: normal;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .card-7:target .overlay-7{
+        opacity: 1;
+    }
     /* circuitos */
     .img-compe-Extre{
-        width: 500px;
+        width: 450px;
+        height: 290px;
+    }
+    .altimetria-web-extre{
+        width: 400px;
+    }
+    .info-coyoteE p{
+        margin-bottom: 2rem;
+    }
+    .img-alti{
+        width: 400px;
+        margin: auto;
+    }
+    .altimetria-rafa{
+        width: 400px;
+        height: 94px;
     }
     .img-coyore-cele{
-        width: 500px;
+        width: 250px;
+        height: 291px;
         margin: 0;
     }
     .img-compe-Rafa{
-        width: 500px;
+        width: 280px;
     }
     .vectoresEctre{
         display: flex;
@@ -2283,16 +2476,154 @@ option{
     .vectoresR{
         justify-content: space-evenly;
     }
-    /* Carrusel */
-    .imagen-1-carrusel-1{
-        width: 500px;
-        height: 438px;
+    .altimetria-web-extre{
+        width: 250px;
     }
-    .imagen-1-carrusel-2{
-        width: 500px;
-        height: 438px;
+    .datos-compe{
+        width: 140px;
     }
-    /* ===============================Carrusel================================= */
+    .infovectores{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .datoss-img{
+        width: 60px;
+    }
+    .datos-compe p{
+        font-size: 1.5rem;
+    }
+    .botones-Rafa{
+        width: 100%;
+    }
+    
+    /* Paquetes */
+    .info-impoPA{
+        font-family: 'Roboto',san-serif;
+        font-size: 1.8rem;
+        color:#ff0000;
+        font-weight: 300;
+    }
+    .comida-hospedajel h4{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1.5rem 0 0;
+    }
+    #Comida-L{
+        margin: 1rem 0 0;
+    }
+    .medi-tras h4{
+        padding: 1.5rem 0;
+    }
+    .trasnsporte{
+        margin: 0;
+    }
+    .empresas-trans{
+        margin: 0;
+    }
+    .img-empresas{
+        width: 150px;
+        height: 149px;
+    }
+    /* Cardssss */
+    .card-paquetes{
+        width:250px;
+        height: 156px;
+    }
+    .card-paquetes img{
+        width: 100%;
+        height: 100%;
+    }
+    .tamaño-card{
+        width: 250px;
+        margin: 0 .5rem;
+        height: 250px;
+    }
+    .overlay-paquetes{
+        padding: 2rem 0 0;
+        text-align: center;
+    }
+    .img-text-paquetes{
+        font-size: 2rem;
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .card-paquetes:target .overlay-paquetes{
+        opacity: 1;
+    }
+    /* Paquete 2 */
+    .tamaño-cardE{
+        width: 250px;
+        
+    }
+    #hospedaje-E{
+        padding: 0;
+        width: 250px;
+        margin: 0 auto;
+    }
+    #Comida-E{
+        padding: 0;
+        width: 250px;
+        margin: 0 auto;
+    }
+    /* Paquete 3 */
+    #comida-R{
+        width: 270px;
+    }
+    #hospedaje-R{
+        width: 270px;
+    }
+    .tamaño-cardR{
+        margin: 0 auto;
+        width: 250px;
+        padding-top: 1.5rem;
+    }
+    .medi-tras h4{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .card-paquetesR{
+        width: 250px;
+        height: 156px;
+    }
+    .overlay-paquetesR{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(13, 4, 4, 0.61);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        padding: 4.5rem 2.5rem;
+    }
+    .card-paquetesR:hover .overlay-paquetesR{
+        opacity: 1;
+    }
+    .camisa-oficial h2{
+        width: 270px;
+    }
+    .camisa-oficial h3{
+        width: 250px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    .camisaas{
+        width: 200px;
+        height: 249px;
+    }
+    .hombre{
+        justify-content: center;
+    }
+    .mujer{
+        justify-content: center;
+    }
     .prueba{
         height: 1250px;
     }
@@ -2302,7 +2633,216 @@ option{
     .numero{
         font-size: 80px;
     }
-    /* inscripciones */
+    /* Inscripciones */
+    .card-inscripcion{
+        width: 270px;
+        height: 41rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+    .card-inscripcion h3{
+        padding: 4rem 0 3rem;
+    }
+    .card-inscripcion p{
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 1.5rem;
+        width: 230px;
+    }
+    /* hover card */
+    .card-inscripcion:target{
+        background-color: var(--color-hover-2);
+    }
+    .insrip{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        width: 270px;
+    }
+    .insrips{
+        width: 270px;
+    }
+    /* card de premiaciones */
+    .premiaciones h2{
+        padding: 6rem 0 3rem;
+    }
+    .premiaciones-card{
+        width:270px;
+        height: 51.1rem;
+        /* margin: 2rem .5rem; */
+    }
+    .premio-card1{
+        background-color:var(--color-hover-2);
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        
+    }
+    .premio-card1 h3{
+        padding-top: 22rem;
+        width: 260px;
+    }
+    .premio-card2{
+        z-index: -1;
+        display: none;
+        border: .5rem solid var(--color-hover-2);
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .premio-card2 h3{
+        padding: 6rem 0 3rem;
+    }
+    .premio-card2 p{
+        line-height:4rem;
+        margin: 2rem 1.5rem;
+    }
+    .premiaciones-card:target .premio-card1{
+        display: none;
+    }
+    .premiaciones-card:target .premio-card2{
+        display: block;
+        
+    }
+    /* ===============================Carrusel================================= */
+    /* Carrusel */
+    .imagen-1-carrusel-1{
+        width: 250px;
+        height: 217px;
+    }
+    .imagen-1-carrusel-2{
+        width: 500px;
+        height: 438px;
+    }
+    .numero{
+        font-size: 40px;
+    }
+    .info-premio{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .flex-control-nav li a{
+        display: block;
+        background-color: #fff;
+        width: 8px;
+        height: 8px;
+        border-radius: 12px;
+        /* crear una sangria en la primer linea de un parrafo */
+        text-indent: -9999px;
+        /* background-color: blueviolet; */
+        background-color: #ff7a7a;
+        z-index: 0;
+    }
+    
+    .flex-control-nav li a:hover{
+        background-color: #FB6565;
+    }
+    
+    .flex-control-nav li a.flex-active{
+        background-color: #F13535;
+    }
+    .flex-direction-nav a{
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        /* top: 50%; */
+        bottom: 58%;
+        z-index: 999;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        /* background-color: blue; */
+    }
+    
+    .flex-direction-nav .flex-prev{
+        left: 0;
+    }
+    .flex-direction-nav .flex-next{
+        right: 0;
+    }
+    
+    .flex-direction-nav a::before{
+        font-family: 'flexslider-icon';
+        font-size: 40px;
+        display: inline-block;
+        /* es un icono de ls fuente */
+        content: '\f001';
+        color: #F13535;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, rgba(255, 255, 255,.3));
+    }
+    .flex-next{
+        width: 30px;
+        height: 30px;
+    }
+    .flex-direction-nav a.flex-next::before{
+        font-family: 'flexslider-icon';
+        font-size: 40px;
+        display: inline-block;
+        /* es un icono de ls fuente */
+        content: '\f001';
+        color: #F13535;
+        text-shadow: 1px 1px 0 rgba(255, 255, 255, rgba(255, 255, 255,.3));
+    }
+    .flex-direction-nav a.flex-next::before{
+        content: '\f002';
+    }
+    
+    .flexslider:hover .flex-direction-nav .flex-prev{
+        opacity: 0.9;
+        left: 10px;
+    }
+    
+    .flexslider:hover .flex-direction-nav .flex-next{
+        opacity: 0.9;
+        right: 10px;
+    }
+    .premio{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-premio{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    .info-premio p{
+        display: flex;
+        text-align: center;
+        width: 100%;
+        line-height: 1.5;
+        margin: 1rem 0;
+    }
+    .textos-premios{
+        padding: 0;
+    }
+    .tamaño-todo{
+        height: auto;
+    }
+    .info-premio h3{
+        padding: 3.5rem 0 1rem;
+        
+    }
+    .tamaño-rafa{
+        height: auto;
+    }
+    .prueba{
+        height: 1120px;
+    }
+    .premio h2{
+        padding-top: 6rem;
+    }
+    .controls {
+        font-size: 1.8rem;
+    }
+    .mensaje{
+        font-size: 1.8rem;;
+    } 
+    /* inscripciones html */
     .nombre-compro-circui{
         padding: 3rem 0;
     }
@@ -2321,9 +2861,1050 @@ option{
         justify-content: center;
         text-align: center;
     }
+    .controls{
+        width: 270px;
+    }
+    .control{
+        width: 270px;
+    }
+    select{
+        width: 270px;
+    }
+    /* footer */
+    .logo-footer{
+        display: none;
+    }
+    .parejas-redes{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+    .parejas-redess{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+    }
+    .red-1{
+        width: 30px;
+        margin: 0;
+    }
+    .redes-2{
+        width:30px;
+        padding-top: 3rem;
+    }
     /* Galeria */
     .info-galeria{
         padding-top: 40%;
     }
+    #Galeria-fotos{
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .foto-galeria{
+        width: 250px;
+    }
 }
-
+@media screen and (max-width: 550px){
+    .h1{
+        font-size: 3rem;
+    }
+    .p{
+        font-size: 15px;
+    }
+    .h2{
+        font-size: 2.5rem;
+    }
+    .h3{
+        font-size: 2rem;
+    }
+    .h4{
+        font-size: 1.8rem;
+    }
+    /* ===============================Boton============================== */
+    .Boton-header{
+        font-size:16px;
+    } 
+    .btn-he{
+        width:15rem;
+        height: 4rem;
+        padding: .7rem 1.5rem;
+    }
+    .btn-he:target{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f00000, #dc281e);/* Inversión del degradado */
+        transform: translateY(-3px); /* Efecto de elevación */
+        border: 3px solid #b70909;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    }
+    .btn{
+        width: 118px;
+        height: 30px;
+        font-size:14px;
+        padding: .3rem 1.5rem;
+    }
+    .btn:target{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+        background: linear-gradient(to right, #f00000, #dc281e);
+        border: 3px solid #b70909;
+    }
+    .btn-paq{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: .5rem 0;
+    }
+    .btn-com{
+        width:11.8rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding: .3rem 1.5rem;
+        font-size: 14px;
+    }
+    .btn-com:target{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f00000, #dc281e);
+        border: 3px solid #b70909;
+    }
+    .btn-inscrip{
+        width: 118px;
+        height: 30px;
+        padding: .3rem 1.5rem;
+    }
+    .btn-ins{
+        font-size:14px;
+    }
+    /* ====================Header============================= */
+    .info-header p{
+        margin: .5rem 0;
+    }
+    .info-header{
+        padding-top:45%;
+    }
+    .logo-img{
+        width: 50px;
+    }
+    .texto-normal{
+        display: none;
+    }
+    .boton{
+        margin: 1rem 0 0;
+    }
+     /* ====================Nosotros============================= */
+    .informacion h2{
+        padding: 3rem 0 1.5rem;
+        text-align: center;
+    }
+    .informacion h3{
+        margin: .5rem 0;
+    }
+    .historia{
+        margin: 0;
+    }
+    .informacion p{
+        width:95%;
+        margin: 0 auto;
+        place-items: center;
+    }
+    .img-nosotross{
+        width: 290px;
+    }
+    .personas-img{
+        width: 270px;
+    }
+    .texto-persona{
+        width: 270px;
+    }
+     /* ====================Eventos============================= */
+    #concierto{
+        width: 290px;
+        height: 460px;
+    }
+    .info-eventos{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .datos{
+        width: 270px;
+    }
+    .autografo{
+        width: 290px;
+        height: 550px;
+    }
+    .datos-auto{
+        width: 280px;
+    }
+    .ciclistas{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        place-items: center;
+        margin: 0 auto;
+    }
+    .espacio-ciclista{
+        padding: 1rem 0;
+        
+    }
+    .autografo h4{
+        padding: .5rem 0;
+        width: 280px;
+        margin: 0 auto;
+    }
+    #toldos{
+        width: 290px;
+        height: 660px;
+    }
+    #info-toldos{
+        width: 255px;
+        margin: 0 auto;
+    }
+    #Trek{
+        width: 255px;
+    }
+    .logo-trek{
+        width: 180px;
+        height: 50px;
+    }
+    .texto-toldos{
+        width: 255px;
+    }
+    #pinarello{
+        width: 255px;
+    }
+    .logo-pin{
+        width: 100px;
+    }
+    #bikestation{
+        width: 255px;
+    }
+    .logo-bike-img{
+        width: 200px;
+    }
+    /* Card de ciclsitas invitados */
+    /* caracteristcias cartas del hover  */
+    .tamaño-card{
+        width: 270px;
+        height:  228px;
+    }
+    .card{
+        width: 270px;
+        height:  228px;
+        margin: 1rem 0;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay{
+        width: 270px;
+        height:  250px;
+        border-radius: 1rem;
+        padding-top: 9.5rem;
+    }
+    .img-text{
+        font-size: 2rem;
+    }
+    .card:target .overlay{
+        opacity: 1;
+    }
+    /* Card de matew */
+    .card-7{
+        width: 270px;
+        height:  228px;
+        margin: 1rem 0;
+    }
+    .overlay-7{
+        width: 270px;
+        height:  250px;
+        border-radius: 1rem;
+        padding: 9.5rem 3rem 0;
+    }
+    .img-text-7{
+        color: #fff;
+        font-size: 2rem;
+        font-family: "Zen Dots", sans-serif;
+        font-weight: normal;
+        text-align: center;
+    
+    }
+    .card-7:target .overlay-7{
+        opacity: 1;
+    }
+    /* ====================Circuitos============================ */
+    /* =====Circuito 1 =====*/
+    .info-coyoteE{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .info-coyoteE p{
+        margin-bottom: 2rem;
+    }
+    .img-compe-Extre{
+        width: 290px;
+    }
+    .botones-Extremo{
+        width: 100%;
+    }
+    .altimetria-web-extre{
+        width: 270px;
+        height: 58px;
+    }
+    .datoss-img{
+        width: 50px;
+    }
+    .infovectores{
+        flex-wrap: wrap;
+        place-items: center;
+    }
+    .datos-compe{
+        width: 130px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    /* =====Circuito 2 =====*/
+    .img-coyore-cele{
+        width: 270px;
+        height: 267px;
+        margin: 0;
+    }
+    .txt-cele{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .vectores-cele{
+        margin: 0;
+    }
+    .img-alti{
+        width: 270px;
+        height: 54px;
+    }
+    .btn-Cele{
+        width: 100%;
+    }
+    /* =====Circuito 3 =====*/
+    .img-compe-Rafa{
+        width: 270px;
+        height: 154.35px;
+    }
+    .txt-coyoteR{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .altimetria-rafa{
+        width: 260px;
+        height: 60px;
+    }
+    .botones-Rafa{
+        width: 100%;
+    }
+     /* ====================Paquetes============================ */
+    /* =====Paquete 1 =====*/
+    .paquete-coyoteE h2{
+        padding: 3rem 0 1rem;
+    }
+    .tetxo-paquetes{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .comida-hospedajel h4{
+        margin: 1.5rem 0;
+    }
+    .img-empresas{
+        width: 180px;
+        height: 180px;
+    }
+    .medi-tras h4{
+        padding: 1.5rem 0;
+    }
+    /* =====Paquete 2 =====*/
+    .hopedaje-y-comidaE h4{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    #hospedaje-E{
+        width: 260px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .tamaño-cardE{
+        width: 270px;
+    }
+    /* =====Paquete 3 =====*/
+    .tamaño-cardR{
+        width: 270px;
+    }
+    .card-paquetesR{
+        width: 270px;
+        height: 168.48px;
+    }
+    .overlay-paquetesR{
+        padding: 4.5rem 2.5rem;
+    }
+    .info-impoPA{
+        font-size: 15px;
+    }
+    .card-paquetes{
+        width: 270px;
+        height:  168.48px;
+    }
+    .card-paquetes img{
+        width: 100%;
+        height: 100%;
+    }
+    .tamaño-card{
+        margin: 0 .5rem;
+    }
+    .overlay-paquetes{
+        padding: 4.5rem 0;
+    }
+    .img-text-paquetes{
+        font-size: 2rem;
+        width: 240px;
+    }
+    .card-paquetes:target .overlay-paquetes{
+        opacity: 1;
+    }
+     /* ====================Camisa============================ */
+    .camisa-oficial h2{
+        padding: 3rem 0 1rem;
+    }
+    .camisa-oficial h3{
+        margin: 1rem 0;
+    }
+    .camisaas{
+        width: 190px;
+        height: 237.06px;
+    }
+    .hombre{
+        justify-content: center;
+    }
+    .mujer{
+        justify-content: center;
+    }
+    /* ====================Inscripciones Card============================ */
+    .card-inscripcion{
+        width: 290px;
+        height: 38rem;
+        border: .2rem solid var(--color-hover-2);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 2rem .5rem;
+    }
+    /* hover card */
+    .card-inscripcion:target{
+        background-color: var(--color-hover-2);
+    }
+    .insrip{
+        width: 100%;
+    }
+    .premiaciones-card{
+        width: 290px;
+        height: 480px;
+        margin: 2rem .5rem;
+    }
+    .premio-card1 h3{
+        padding-top: 20rem;
+    }
+    .premio-card2{
+        border: .2rem solid var(--color-hover-2);
+    }
+    .premio-card2 h3{
+        padding: 3rem 0;
+    }
+    .premiaciones-card:target .premio-card1{
+        display: none;
+    }
+    .premiaciones-card:target .premio-card2{
+        display: block;
+    }
+    /* ====================Carrusel============================ */
+    .imagen-1-carrusel-1{
+        height: 260px;
+        width: 298.7px;
+    }
+    .numero{
+        font-size: 30px;
+    }
+    .flex-direction-nav a{
+        bottom: 43%;
+        width: 25px;
+        height: 25px;
+    }
+    .flex-direction-nav a::before{
+        font-size: 25px;
+    }
+    .flex-direction-nav a.flex-next::before{
+        font-size: 25px;
+    }
+    .flex-control-nav li a{
+        width: 8px;
+        height: 8px;
+        z-index: 0;
+    }
+    .tex-extreme h3{
+        padding: 1rem 0;
+    }
+    .tex-extremes h3{
+        padding: 1.5rem 0;
+    }
+    .img-premio{
+        margin: 0;
+    }
+    .info-premio h3 {
+        padding: 0;
+        margin-top: 20px;
+    }
+     /* ====================Contacto============================ */
+    .controls {
+        width: 280px;
+        font-size: 1.4rem;
+    }
+    .mensaje{
+        width: 280px;
+        height: 120px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 2px solid #F13535;
+        color: #000;
+        font-family: 'Roboto',sans-serif;
+        font-weight: normal;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .txt-con p{
+        font-size: 18px;
+    }
+    /* ====================Footer============================ */
+    .logo-footer{
+        display: none;
+    }
+    .red-1{
+        width: 40px;
+    }
+    .redes-2{
+        width: 40px;
+        padding: 1.5rem 0;
+    }
+    .parejas-redes{
+        flex-direction: column;
+    }
+    .cookies{
+        text-align: center;
+    }
+    .texto-menu{
+        font-size: 18px;
+    }
+    .nav-link{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    /* ====================Galeria============================ */
+    #Galeria-fotos{
+        grid-template-columns: repeat(1 ,1fr);
+        row-gap: 25px;
+    }
+    .foto-galeria{
+        width: 280px;
+    }
+    .info-galeria{
+        padding-top: 35%;
+    }
+     /* ====================Inscribirse============================ */
+    .control {
+        width: 280px;
+        font-size: 1.4rem;
+    }
+    select{
+        width: 280px;
+        font-size: 1.4rem;
+    }
+    .info-inscrip{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 340px) {
+    .container{
+        width: 95%;
+    }
+    .h1{
+        font-size: 2.8rem;
+    }
+    .p{
+        font-size: 14px;
+    }
+    .h2{
+        font-size: 2.5rem;
+    }
+    .h3{
+        font-size: 2rem;
+    }
+    .h4{
+        font-size: 1.8rem;
+    }
+    .Boton-header{
+        font-size:14px;
+    } 
+    .btn-he{
+        width:14rem;
+        height: 3rem;
+        padding: .3rem 1.5rem;
+    }
+    .btn-he:target{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f00000, #dc281e);/* Inversión del degradado */
+        transform: translateY(-3px); /* Efecto de elevación */
+        border: 3px solid #b70909;
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    }
+    .btn{
+        width: 118px;
+        height: 30px;
+        font-size:14px;
+        padding: .3rem 1.5rem;
+    }
+    .btn:target{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e);
+        background: linear-gradient(to right, #f00000, #dc281e);
+        border: 3px solid #b70909;
+    }
+    .btn-paq{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: .5rem 0;
+    }
+    .btn-com{
+        width:11.8rem;
+        height: 3rem;
+        border-radius: 2rem;
+        padding: .3rem 1.5rem;
+        font-size: 14px;
+    }
+    .btn-com:target{
+        background: -webkit-linear-gradient(to right, #f00000, #dc281e); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f00000, #dc281e);
+        border: 3px solid #b70909;
+    }
+    .btn-inscrip{
+        width: 118px;
+        height: 30px;
+        padding: .3rem 1.5rem;
+    }
+    .btn-ins{
+        font-size:14px;
+    }
+    /* ====================Header============================= */
+    .info-header p{
+        margin: .5rem 0;
+    }
+    .info-header{
+        padding-top:25%;
+    }
+    .logo-img{
+        width: 50px;
+    }
+    .texto-normal{
+        display: none;
+    }
+    .boton{
+        margin: 1rem 0 0;
+    }
+    .texto-celular-peque{
+        display: block;
+    }
+    .texto-normal{
+        display: none;
+    }
+    /* ====================Menu============================= */
+    .contenedor-nav{
+        padding: .5rem 0;
+    }
+     /* ====================Nosotros============================= */
+    .informacion h2{
+        padding: 3rem 0 1.5rem;
+        text-align: center;
+    }
+    .informacion h3{
+        margin: .5rem 0;
+    }
+    .historia{
+        margin: 0;
+    }
+    .informacion p{
+        width: 275px;
+        margin: 0 auto;
+        place-items: center;
+    }
+    .img-nosotross{
+        width: 250px;
+    }
+    .personas-img{
+        width: 200px;
+    }
+    .texto-persona{
+        width: 250px;
+    }
+     /* ====================Eventos============================= */
+    #concierto{
+        width: 270px;
+        height: 460px;
+    }
+    .info-eventos{
+        width: 265px;
+    }
+    .datos{
+        width: 250px;
+    }
+    .autografo{
+        width: 270px;
+        height: 650px;
+    }
+    .datos-auto{
+        width: 250px;
+    }
+    .ciclistas{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        margin: 0 auto;
+    }
+    .espacio-ciclista{
+        padding: 1.5rem 0;
+    }
+    .autografo h4{
+        padding-bottom: 2rem;
+        width: 250px;
+        margin: 0 auto;
+    }
+    #toldos{
+        width: 270px;
+        height: 640px;
+    }
+    #info-toldos{
+        width: 255px;
+        margin: 0 auto;
+    }
+    #Trek{
+        width: 255px;
+    }
+    .logo-trek{
+        width: 180px;
+        height: 50px;
+    }
+    .texto-toldos{
+        width: 255px;
+    }
+    #pinarello{
+        width: 255px;
+    }
+    .logo-pin{
+        width: 100px;
+    }
+    #bikestation{
+        width: 255px;
+    }
+    .logo-bike-img{
+        width: 200px;
+    }
+     /* ====================Card ciclistas invitados============================= */
+    .tex-ciclis{
+        padding: 3rem 0 1.5rem;
+    }
+    /* caracteristcias cartas del hover  */
+    .tamaño-card{
+        width: 251px;
+        height:  228px;
+    }
+    .card{
+        width: 251px;
+        height:  228px;
+        margin: 1rem 0;
+    }
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+    .overlay{
+        width: 251px;
+        height:  230px;
+        border-radius: 1rem;
+        padding-top: 9.5rem;
+    }
+    .img-text{
+        font-size: 2rem;
+    }
+    .card:target .overlay{
+        opacity: 1;
+    }
+    /* Card de matew */
+    .card-7{
+        width: 250px;
+        height:  228px;
+        margin: 1rem 0;
+    }
+    .overlay-7{
+        width: 251px;
+        height:  229px;
+        border-radius: 1rem;
+        padding: 9.5rem 3rem 0;
+    }
+    .img-text-7{
+        color: #fff;
+        font-size: 2rem;
+        font-family: "Zen Dots", sans-serif;
+        font-weight: normal;
+        text-align: center;
+    
+    }
+    .card-7:target .overlay-7{
+        opacity: 1;
+    }
+     /* ====================Circuitos============================ */
+    /* =====Circuito 1 =====*/
+    .info-coyoteE{
+        width: 270px;
+        margin: 0 auto;
+    }
+    .info-coyoteE p{
+        margin-bottom: 2rem;
+    }
+    .img-compe-Extre{
+        width: 260px;
+    }
+    .botones-Extremo{
+        width: 100%;
+    }
+    .altimetria-web-extre{
+        width: 260px;
+    }
+    .datoss-img{
+        width: 50px;
+    }
+    .infovectores{
+        flex-wrap: wrap;
+        place-items: center;
+    }
+    .datos-compe{
+        width: 130px;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    /* =====Circuito 2 =====*/
+    .img-coyore-cele{
+        width: 260px;
+        height: 257px;
+        margin: 0;
+    }
+    .txt-cele{
+        width: 260px;
+        margin: 0 auto;
+    }
+    .vectores-cele{
+        margin: 0;
+    }
+    .img-alti{
+        width: 260px;
+    }
+    .btn-Cele{
+        width: 100%;
+    }
+    /* =====Circuito 3 =====*/
+    .img-compe-Rafa{
+        width: 260px;
+    }
+    .txt-coyoteR{
+        width: 260px;
+        margin: 0 auto;
+    }
+    .altimetria-rafa{
+        width: 260px;
+    }
+    .botones-Rafa{
+        width: 100%;
+    }
+     /* ====================Paquetes============================ */
+    /* =====Paquete 1 =====*/
+    .paquete-coyoteE h2{
+        padding: 3rem 0 1rem;
+    }
+    .tetxo-paquetes{
+        width: 260px;
+        margin: 0 auto;
+    }
+    .comida-hospedajel h4{
+        margin: 1.5rem 0;
+    }
+    .img-empresas{
+        width: 120px;
+        height: 120px;
+    }
+    .medi-tras h4{
+        padding: 1.5rem 0;
+    }
+    /* =====Paquete 2 =====*/
+    .hopedaje-y-comidaE h4{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    #hospedaje-E{
+        width: 260px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .tamaño-cardE{
+        width: 250px;
+    }
+    /* =====Paquete 3 =====*/
+    .tamaño-cardR{
+        width: 250px;
+    }
+    .card-paquetesR{
+        width: 250px;
+        height: 156px;
+    }
+    .overlay-paquetesR{
+        padding: 4.5rem 2.5rem;
+    }
+    .info-impoPA{
+        font-size: 16px;
+    }
+    .card-paquetes{
+        width: 250px;
+        height: 156px;
+    }
+    .card-paquetes img{
+        width: 100%;
+        height: 100%;
+    }
+    .tamaño-card{
+        margin: 0 .5rem;
+    }
+    .overlay-paquetes{
+        padding: 4.5rem 0;
+    }
+    .img-text-paquetes{
+        font-size: 2rem;
+        width: 240px;
+    }
+    .card-paquetes:target .overlay-paquetes{
+        opacity: 1;
+    }
+     /* ====================Camisa============================ */
+    .camisa-oficial h2{
+        padding: 3rem 0 1rem;
+    }
+    .camisa-oficial h3{
+        margin: 1rem 0;
+    }
+    .camisaas{
+        width: 170px;
+        height: 212px;
+    }
+    /* ====================Inscripciones Card============================ */
+    .card-inscripcion{
+        width: 270px;
+        height: 36rem;
+        border: .2rem solid var(--color-hover-2);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 2rem .5rem;
+    }
+    /* hover card */
+    .card-inscripcion:target{
+        background-color: var(--color-hover-2);
+    }
+    .insrip{
+        width: 100%;
+    }
+    /* ====================Premiaciones Card============================ */
+    .premiaciones-card{
+        width: 260px;
+        height: 480px;
+        margin: 2rem .5rem;
+    }
+    .premio-card1 h3{
+        padding-top: 20rem;
+    }
+    .premio-card2{
+        border: .2rem solid var(--color-hover-2);
+    }
+    .premio-card2 h3{
+        padding: 3rem 0;
+    }
+    .premiaciones-card:target .premio-card1{
+        display: none;
+    }
+    .premiaciones-card:target .premio-card2{
+        display: block;
+        
+    }
+    /* ====================Carrusel============================ */
+    .imagen-1-carrusel-1{
+        height: 227px;
+        width: 260px;
+    }
+    .numero{
+        font-size: 30px;
+    }
+    .info-premio{
+        width: 260px;
+        margin: 0 auto;
+    }
+    /* Carrusel premios circuito 1 */
+    .tex-extreme h3{
+        margin: 0;
+        padding: 2.5rem 0;
+    }
+     /* ====================Contacto============================ */
+    .controls {
+        width: 270px;
+        font-size: 1.4rem;
+    }
+    .mensaje{
+        width: 270px;
+        height: 120px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 2px solid #F13535;
+        color: #000;
+        font-family: 'Roboto',sans-serif;
+        font-weight: normal;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .txt-con p{
+        font-size: 18px;
+    }
+     /* ====================Galeria============================ */
+    .foto-galeria{
+        width: 250px;
+    }
+    .info-galeria{
+        padding-top: 35%;
+    }
+     /* ====================Inscribirse============================ */
+    .control {
+        width: 270px;
+        font-size: 1.4rem;
+    }
+    select{
+        width: 270px;
+        font-size: 1.4rem;
+    }
+    .info-inscrip{
+        text-align: center;
+    }
+}
