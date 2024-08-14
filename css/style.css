@@ -743,12 +743,12 @@ nav{
 }
 #hospedaje-L{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 #Comida-L{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .trasnsporte{
