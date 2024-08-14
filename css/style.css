@@ -1565,7 +1565,7 @@ option{
     justify-content: center;
 }
 .img-alti{
-    display: none;
+    display: block;
 }
 
 
