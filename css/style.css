@@ -42,6 +42,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+.altimetria-web-extre{
+    display: block;
+}
+.img-alti{
+    display: block;
+}
 .h1{
     color: var(--color-txt);
     font-family: 'Zen Dots',sans-serif;
@@ -568,8 +574,8 @@ nav{
 .info-coyoteE{
     display: flex;
 }
-.alticels{
-    display: none;
+.alti-cele-web{
+    height: auto;
 }
 .img-web-CE{
     margin-right: 2rem;
@@ -2159,9 +2165,6 @@ option{
 
 
 @media screen and (max-width: 1010px) {
-    .celes-altim-img{
-        display: none;
-    }
     .h1{
         font-size: 6rem;
     }
@@ -2760,12 +2763,6 @@ option{
         width: 450px;
         height: 290px;
     }
-    .altimetria-web-extre{
-        display: none;
-    }
-    .alticels{
-        display: block;
-    }
     .info-coyoteE p{
         margin-bottom: 2rem;
     }
@@ -3257,10 +3254,6 @@ option{
     .h4{
         font-size: 1.8rem;
     }
-    .celes-altim-img{
-        display: none;
-    }
-
     /* ===============================Boton============================== */
     .Boton-header{
         font-size:16px;
@@ -3319,9 +3312,6 @@ option{
     .info-header p{
         margin: .5rem 0;
     }
-    .texto-celular-peque{
-        display: block;
-    }
     .info-header{
         padding-top:45%;
     }
@@ -3331,10 +3321,16 @@ option{
     .texto-normal{
         display: none;
     }
+    .texto-celular-peque{
+        display: block;
+    }
     .boton{
         margin: 1rem 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-     /* ====================Nosotros============================= */
+    /* ====================Nosotros============================= */
     .informacion h2{
         padding: 3rem 0 1.5rem;
         text-align: center;
@@ -3359,7 +3355,7 @@ option{
     .texto-persona{
         width: 270px;
     }
-     /* ====================Eventos============================= */
+    /* ====================Eventos============================= */
     #concierto{
         width: 290px;
         height: 460px;
@@ -3470,7 +3466,7 @@ option{
         font-family: "Zen Dots", sans-serif;
         font-weight: normal;
         text-align: center;
-    
+
     }
     .card-7:target .overlay-7{
         opacity: 1;
@@ -3480,9 +3476,6 @@ option{
     .info-coyoteE{
         width: 85%;
         margin: 0 auto;
-    }
-    .alticels{
-        display: none;
     }
     .info-coyoteE p{
         margin-bottom: 2rem;
@@ -3545,7 +3538,7 @@ option{
     .botones-Rafa{
         width: 100%;
     }
-     /* ====================Paquetes============================ */
+    /* ====================Paquetes============================ */
     /* =====Paquete 1 =====*/
     .paquete-coyoteE h2{
         padding: 3rem 0 1rem;
@@ -3558,8 +3551,7 @@ option{
         margin: 1.5rem 0;
     }
     .img-empresas{
-        width: 180px;
-        height: 180px;
+        width: 120px;
     }
     .medi-tras h4{
         padding: 1.5rem 0;
@@ -3613,7 +3605,7 @@ option{
     .card-paquetes:target .overlay-paquetes{
         opacity: 1;
     }
-     /* ====================Camisa============================ */
+    /* ====================Camisa============================ */
     .camisa-oficial h2{
         padding: 3rem 0 1rem;
     }
@@ -3704,7 +3696,7 @@ option{
         padding: 0;
         margin-top: 20px;
     }
-     /* ====================Contacto============================ */
+    /* ====================Contacto============================ */
     .controls {
         width: 280px;
         font-size: 1.4rem;
@@ -3723,8 +3715,8 @@ option{
         font-size: 2.5rem;
         text-align: center;
     }
-    #txt-con p{
-        font-size: 1.8rem;
+    .txt-con p{
+        font-size: 18px;
     }
     /* ====================Footer============================ */
     .logo-footer{
@@ -3761,7 +3753,7 @@ option{
     .info-galeria{
         padding-top: 35%;
     }
-     /* ====================Inscribirse============================ */
+    /* ====================Inscribirse============================ */
     .control {
         width: 280px;
         font-size: 1.4rem;
@@ -3772,7 +3764,7 @@ option{
     }
     .info-inscrip{
         text-align: center;
-    }
+}
 }
 @media screen and (max-width: 340px) {
     .container{
@@ -4017,7 +4009,7 @@ option{
      /* ====================Circuitos============================ */
     /* =====Circuito 1 =====*/
     .info-coyoteE{
-        width: 270px;
+        width: 260px;
         margin: 0 auto;
     }
     .info-coyoteE p{
