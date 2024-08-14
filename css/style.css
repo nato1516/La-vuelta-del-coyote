@@ -2979,6 +2979,9 @@ option{
     .info-header p{
         margin: .5rem 0;
     }
+    .texto-celular-peque{
+        display: block;
+    }
     .info-header{
         padding-top:45%;
     }
