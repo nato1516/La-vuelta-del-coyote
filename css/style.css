@@ -2604,6 +2604,12 @@ option{
         font-size: 1.8rem;
         
     }
+    .logo{
+        width: 50px;
+    }
+    .logo-img{
+        width: 50px;
+    }
     /* banner */
     .info-header{
         width: 100%;
