@@ -568,6 +568,9 @@ nav{
 .info-coyoteE{
     display: flex;
 }
+.alticels{
+    display: none;
+}
 .img-web-CE{
     margin-right: 2rem;
 }
@@ -1444,6 +1447,10 @@ footer{
     margin: 0 30px;
     /* z-index: 8000; */
 }
+#Galeria-fotos a{
+    display: flex;
+    justify-content: center;
+}
 /* ========================================================================================================
 ========================================================================================================
 ========================================================================================================
@@ -1551,7 +1558,9 @@ option{
     display: flex;
     justify-content: center;
 }
-
+.img-alti{
+    display: none;
+}
 
 
 
@@ -1764,8 +1773,6 @@ option{
         justify-content: center;
         text-align: center;
     }
-
-
     /* camisa */
     .camisa-oficialimg{
         justify-content: center;
@@ -1853,6 +1860,303 @@ option{
     }
     
 }
+@media screen and (max-width: 1440px){
+    /* menu  */
+    .img-alti{
+        display: none;
+    }
+    .menu{
+        justify-content: space-between;
+    }
+    .logo-img{
+        width:70px;
+        z-index: 1;
+        margin-right: 20px;
+    }
+    .container{
+        width: 90%;
+    }
+    .h1{
+        font-size: 6.8rem;
+    }
+    .p{
+        font-size: 2.5rem;
+    }
+    .h2{
+        font-size: 5.5rem;
+    }
+    .h3{
+        font-size: 4.5rem;
+    }
+    .h4{
+        font-size: 3.5rem;
+    }
+    /* ==============================Header=================== */
+    .info-header{
+        padding-top: 15%;
+    }
+    .celes-altim-img{
+        display: block;
+    }
+    .img-alti{
+        display: none;
+    }
+    /* acerca de nosotros */
+    
+    .acerca_de_nosotros p{
+        text-align: center;
+    }
+    .nosotros h3{
+        text-align: center;
+    }
+    .imagen-nosotros{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .personas{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* ==============Eventos================== */
+    .eventos_arriba{
+        justify-content: center;
+    }
+    /* ciclistas */
+    #ciclistas-invitados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /*=====================Imagenes de las competencias====================================
+    ====================================================================================*/
+    /*Extremo*/
+    .altimetria-web-extre{
+        width: 900px;
+    }
+    .img-compe-Extre{
+        width: 900px;
+    }
+    .txt-coyoteE{
+        text-align: center;
+    }
+    /*Celestial*/
+    .informacion-cele p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .img-coyore-cele{
+        width: 850px;
+        height: auto;
+        margin: 0;
+    }
+    .img-alti{
+        width: 900px;
+    }
+    .vectores-cele{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .informacion-cele{
+        flex-direction: column;
+    }
+    .img-competenciaCele{
+        width: 600px;
+    }
+    .img-coyoteCele{
+        width: 100%;
+    }
+    #alti-cele-web{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-Cele{
+        width: 80%;
+    }
+    .img-alti{
+        width: 500px;
+    }
+    /*Rafaga del coyote*/
+    .img-compe-Rafa{
+        width: 900px;
+    }
+    .altimetria-rafa{
+        width: 900px;
+        height: auto;
+    }
+    /* ===========================================Botones=====================================
+    ======================================================================================= */
+    /* Botones competencia  */
+    .btn{
+        width:16rem;
+        padding: 7px 5px;
+    }
+
+    .botones-compe a{
+        font-size: 2.2rem;
+    }
+    .btn-menu{
+        width: 10.5rem;
+    }
+    .boton-txt{
+        font-size:1.8rem;
+        font-family:'Roboto',sans-serif;
+    } 
+    /*comida-hospedaje y salud*/
+    .card:target .overlay{
+        opacity: 1;
+    }
+    .tamaño-card{
+        margin-top: 2rem;
+    }
+    .comida-hospedajeL h4{
+        display: flex;
+        justify-content: center;
+    }
+    #Comida-L{
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    #hospedaje-L{
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    .btn-paq{
+        width: 400px;
+        margin: 2rem 0;
+    }
+    /* Trasnsporte y Salud */
+    .img-empresas{
+        margin: 2rem .5rem 0;
+    }
+    .empresas-trans{
+        justify-content: space-evenly;
+    }
+    /* comida y hospedaje E */
+    .hopedaje-y-comidaE{
+        flex-direction: column;
+    }
+    .card-coyote-exploE{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #hospedaje-E{
+        margin: initial;
+    }
+    .tamaño-cardE{
+        margin: initial;
+    }
+    #Comida-E{
+        margin: initial;
+    }
+    /* texto de los paquetes */
+    .tetxo-paquetes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    /* camisa */
+    .camisa-oficialimg{
+        justify-content: center;
+        justify-content: center;
+    }
+    /* inscripciones */
+    #premiacion-extremo{
+        width: 100%;
+        margin-right: 0;
+    }
+    .premiacion-rafaga{
+        width: 100%;
+        margin-left: 0;
+    }
+    #card{
+        display: grid;
+        row-gap: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+    #card-de-inscripcion{
+        display: grid;
+        row-gap: 2rem;
+        width: 100%;
+        justify-content: center;
+    }
+    /* carrusel */
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .slides{
+        width:100%;
+    }
+    .premios{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 100%;
+    }
+    .prueba{
+        height: 1250px;
+    }
+    .contenedor-pre{
+        width: 100%;
+        height: 135rem;
+        margin: 0 auto;
+    }
+    .img-premio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.5rem;
+    }
+    .imagen-1-carrusel-1{
+        width: 600px;
+    }
+    .textos-premios{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .premios h3{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .textos-premios p{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* Galeria */
+    #Galeria-fotos{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .foto-galeria{
+        width: 500px;
+    }
+    .light-box img{
+        width: 80vw;
+        max-height: 75vh;
+    }
+    #Galeria-fotos a{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
 
 @media screen and (max-width: 1010px) {
     .h1{
@@ -2192,7 +2496,7 @@ option{
         height: auto;
     }
     .p{
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
     /* =========================================BOTONES===================== */
     .Boton-header{
@@ -2275,13 +2579,28 @@ option{
         background: linear-gradient(to right, #f00000, #dc281e);
         border: 3px solid #b70909;
     }
+    #btn-contac{
+        margin: 1.5rem 0 6.5rem;
+    }
+    #btn-enviar{
+        border: 1px solid var(--color-hover-2);
+        padding: .6rem 4rem;
+        text-align: center;
+        border-radius: 2rem;
+        margin-left: 1.2rem;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8rem;
+        
+    }
     /* banner */
     .info-header{
         width: 100%;
-        padding-top: 23%;
+        padding-top: 20%;
     }
     .info-header p{
-        width: 300px;
+        width: 100%;
         margin: 0 auto;
         padding-top: 1.5rem;
     }
@@ -2439,26 +2758,29 @@ option{
         height: 290px;
     }
     .altimetria-web-extre{
-        width: 400px;
+        display: none;
+    }
+    .alticels{
+        display: block;
     }
     .info-coyoteE p{
         margin-bottom: 2rem;
     }
     .img-alti{
-        width: 400px;
+        width: 450px;
         margin: auto;
     }
     .altimetria-rafa{
-        width: 400px;
+        width: 450px;
         height: 94px;
     }
     .img-coyore-cele{
-        width: 250px;
-        height: 291px;
+        width: 450px;
+        height: 491px;
         margin: 0;
     }
     .img-compe-Rafa{
-        width: 280px;
+        width: 450px;
     }
     .vectoresEctre{
         display: flex;
@@ -2475,9 +2797,6 @@ option{
     }
     .vectoresR{
         justify-content: space-evenly;
-    }
-    .altimetria-web-extre{
-        width: 250px;
     }
     .datos-compe{
         width: 140px;
@@ -2615,8 +2934,8 @@ option{
         padding: 1rem 0;
     }
     .camisaas{
-        width: 200px;
-        height: 249px;
+        width: 260px;
+        height: 299px;
     }
     .hombre{
         justify-content: center;
@@ -2635,7 +2954,7 @@ option{
     }
     /* Inscripciones */
     .card-inscripcion{
-        width: 270px;
+        width: 370px;
         height: 41rem;
         margin: 0;
         margin-bottom: 1.5rem;
@@ -2657,17 +2976,17 @@ option{
         display: flex;
         flex-direction: column;
         place-items: center;
-        width: 270px;
+        width: 370px;
     }
     .insrips{
-        width: 270px;
+        width: 370px;
     }
     /* card de premiaciones */
     .premiaciones h2{
         padding: 6rem 0 3rem;
     }
     .premiaciones-card{
-        width:270px;
+        width:370px;
         height: 51.1rem;
         /* margin: 2rem .5rem; */
     }
@@ -2680,8 +2999,11 @@ option{
         
     }
     .premio-card1 h3{
-        padding-top: 22rem;
-        width: 260px;
+        padding-top: 28rem;
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
     }
     .premio-card2{
         z-index: -1;
@@ -2710,8 +3032,8 @@ option{
     /* ===============================Carrusel================================= */
     /* Carrusel */
     .imagen-1-carrusel-1{
-        width: 250px;
-        height: 217px;
+        width: 400px;
+        height: 347px;
     }
     .imagen-1-carrusel-2{
         width: 500px;
@@ -2721,7 +3043,7 @@ option{
         font-size: 40px;
     }
     .info-premio{
-        width: 280px;
+        width: 75%;
         margin: 0 auto;
     }
     .flex-control-nav li a{
@@ -2839,8 +3161,12 @@ option{
     .controls {
         font-size: 1.8rem;
     }
+    #caja-contacto{
+        margin: 1rem 0;
+    }
     .mensaje{
         font-size: 1.8rem;;
+
     } 
     /* inscripciones html */
     .nombre-compro-circui{
@@ -2899,11 +3225,18 @@ option{
         padding-top: 40%;
     }
     #Galeria-fotos{
-        grid-template-columns: repeat(1 ,1fr);
+        grid-template-columns: repeat(2 ,1fr);
+        row-gap: 25px;
     }
     .foto-galeria{
         width: 250px;
+        height: auto;
     }
+    /* contacto */
+    #txt-con p{
+        font-size: 1.9rem;
+    }
+
 }
 @media screen and (max-width: 550px){
     .h1{
@@ -3140,6 +3473,9 @@ option{
     .info-coyoteE{
         width: 85%;
         margin: 0 auto;
+    }
+    .alticels{
+        display: none;
     }
     .info-coyoteE p{
         margin-bottom: 2rem;
@@ -3380,8 +3716,8 @@ option{
         font-size: 2.5rem;
         text-align: center;
     }
-    .txt-con p{
-        font-size: 18px;
+    #txt-con p{
+        font-size: 1.8rem;
     }
     /* ====================Footer============================ */
     .logo-footer{
@@ -3888,8 +4224,8 @@ option{
         font-size: 2.5rem;
         text-align: center;
     }
-    .txt-con p{
-        font-size: 18px;
+    #txt-con p{
+        font-size: 1.8rem;
     }
      /* ====================Galeria============================ */
     .foto-galeria{
