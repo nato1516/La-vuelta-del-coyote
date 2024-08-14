@@ -2159,6 +2159,9 @@ option{
 
 
 @media screen and (max-width: 1010px) {
+    .celes-altim-img{
+        display: none;
+    }
     .h1{
         font-size: 6rem;
     }
@@ -3254,6 +3257,10 @@ option{
     .h4{
         font-size: 1.8rem;
     }
+    .celes-altim-img{
+        display: none;
+    }
+
     /* ===============================Boton============================== */
     .Boton-header{
         font-size:16px;
