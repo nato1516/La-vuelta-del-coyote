@@ -1581,13 +1581,16 @@ option{
 @media screen and (min-width: 1921px ) {
     #Galeria-fotos{
         padding-top: 8rem;
-        -webkit-display: grid;
-        -webkit-grid-template-columns: repeat(3 ,1fr);
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
         column-gap: 2rem;
         row-gap: 95px;
         overflow: hidden;
         width: 100%;
         margin: auto;
+    }
+    #Galeria-fotos::after{
+        display:none;
     }
     #Galeria-fotos img{
         object-fit: cover;
