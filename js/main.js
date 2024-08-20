@@ -20,3 +20,16 @@ if(navClose){
         /*=============== busque a nav menu y quite esa clase  ===============*/
     });
 }
+
+const navLink = document.querySelectorAll('.nav-link');
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav--menu')
+    /*=============== Cuando se da click en cada nav__link,se remueve show-menu ===============*/
+    navMenu.classList.remove('show-menu')
+}
+/*Cargar imagen de primero*/
+window.onload= function(){
+    alert('He cargado completamente la pagina')
+    $('#onload').fadeOut();
+    $('body').removeClass('hidden');
+}
