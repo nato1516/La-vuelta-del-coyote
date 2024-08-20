@@ -4,7 +4,7 @@ function progress(){
     var text = document.querySelector('.text');
     var count = 4;
     var per = 16;
-    var loading = setInterval(animate, 50);
+    var loading = setInterval(animate, 100);
     function animate(){
       if(count == 100 && per == 400){
         percent.classList.add("text-blink");
@@ -22,4 +22,4 @@ function progress(){
 
     setTimeout(function(){
         window.location.href = 'home.html';
-    }, 15000);
+    }, 11000);
