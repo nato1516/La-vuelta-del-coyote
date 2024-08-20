@@ -1581,8 +1581,8 @@ option{
 @media screen and (min-width: 1921px ) {
     #Galeria-fotos{
         padding-top: 8rem;
-        display: grid;
-        grid-template-columns: repeat(3 ,1fr);
+        -webkit-display: grid;
+        -webkit-grid-template-columns: repeat(3 ,1fr);
         column-gap: 2rem;
         row-gap: 95px;
         overflow: hidden;
