@@ -22,4 +22,4 @@ function progress(){
 
     setTimeout(function(){
         window.location.href = 'home.html';
-    }, 9000);
+    }, 11000);

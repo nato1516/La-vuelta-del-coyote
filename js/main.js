@@ -1,5 +1,5 @@
 
-const   navMenu = document.getElementById('nav--menu'),
+const   navMenu = document.getElementById('nav-menu'),
 /*=============== Variable cambia constante menos posibilidades de que cambie  ===============*/
         navToggle = document.getElementById('nav-toggle'),
         navClose = document.getElementById('nav-close')
@@ -21,9 +21,11 @@ if(navClose){
     });
 }
 
+
 const navLink = document.querySelectorAll('.nav-link');
 const linkAction = () =>{
-    const navMenu = document.getElementById('nav--menu')
+    const navMenu = document.getElementById('nav-menu')
     /*=============== Cuando se da click en cada nav__link,se remueve show-menu ===============*/
     navMenu.classList.remove('show-menu')
 }
+navLink.forEach(n => n.addEventListener('click', linkAction));
