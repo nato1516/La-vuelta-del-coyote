@@ -3268,9 +3268,15 @@ option{
     #txt-con p{
         font-size: 1.9rem;
     }
+    .fondo-inscripcio{
+        height: 900px;
+    }
 
 }
 @media screen and (max-width: 550px){
+    .fondo-inscripcio{
+        height: 600px;
+    }
     .h1{
         font-size: 3rem;
     }
@@ -3812,6 +3818,9 @@ option{
 }
 }
 @media screen and (max-width: 340px) {
+    .fondo-inscripcio{
+        height: 500px;
+    }
     .container{
         width: 95%;
     }
