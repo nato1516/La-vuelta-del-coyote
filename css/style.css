@@ -2498,6 +2498,9 @@ option{
     .altimetria-web-extre {
         width: 450px
     }
+    .fondo-inscripcio{
+        height: 900px;
+    }
 }
 
 @media screen and (max-width: 768px) {
