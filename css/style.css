@@ -252,7 +252,7 @@ nav{
     color: rgb(243, 51, 51);
     font-weight: 600;
 }
-.nav-menu{
+.nav--menu{
     display: flex;
     align-items: center;
 }
@@ -1313,7 +1313,7 @@ footer{
 .nav-menuss{
     width: 133px;
 }
-.nav-linkf{
+.nav-link{
     padding: 1rem 0;
 }
 .info__footer{
@@ -2248,7 +2248,7 @@ option{
         color: var(--title-color);
         cursor: pointer;
     } 
-    .nav-menu{
+    .nav--menu{
         background-color: #4d0a0a;
         width: 80%;
         position: fixed;
