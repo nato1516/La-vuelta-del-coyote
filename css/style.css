@@ -1578,19 +1578,16 @@ option{
 
 
 
-@media (orientation: landscape) {
+@media screen and (min-width: 1921px ) {
     #Galeria-fotos{
         padding-top: 8rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit ,minmax(100px,1fr));
+        grid-template-columns: repeat(3 ,1fr);
         column-gap: 2rem;
         row-gap: 95px;
         overflow: hidden;
         width: 100%;
         margin: auto;
-    }
-    #Galeria-fotos::after{
-        display:none;
     }
     #Galeria-fotos img{
         object-fit: cover;
@@ -4260,7 +4257,7 @@ option{
         color: #000;
         font-family: 'Roboto',sans-serif;
         font-weight: normal;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     #txt-con p{
