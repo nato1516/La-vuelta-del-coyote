@@ -1313,7 +1313,7 @@ footer{
 .nav-menuss{
     width: 133px;
 }
-.nav-link{
+.nav-links{
     padding: 1rem 0;
 }
 .info__footer{
@@ -3581,6 +3581,9 @@ option{
     }
     .comida-hospedajel h4{
         margin: 1.5rem 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     .img-empresas{
         width: 120px;
@@ -3594,6 +3597,8 @@ option{
         width: 100%;
         margin: 0 auto;
         padding: 1rem 0;
+        text-align: center;
+        justify-content: center;
     }
     #hospedaje-E{
         width: 260px;
@@ -3644,6 +3649,8 @@ option{
     }
     .camisa-oficial h3{
         margin: 1rem 0;
+        width: 100%;
+        justify-content: center;
     }
     .camisaas{
         width: 190px;
