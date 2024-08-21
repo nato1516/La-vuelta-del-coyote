@@ -2912,12 +2912,12 @@ option{
     }
     #hospedaje-E{
         padding: 0;
-        width: 250px;
+        width: 300px;
         margin: 0 auto;
     }
     #Comida-E{
         padding: 0;
-        width: 250px;
+        width: 300px;
         margin: 0 auto;
     }
     /* Paquete 3 */
@@ -2926,6 +2926,7 @@ option{
     }
     #hospedaje-R{
         width: 270px;
+        margin: 0;
     }
     .tamaño-cardR{
         margin: 0 auto;
@@ -4145,6 +4146,9 @@ option{
     }
     .tamaño-cardE{
         width: 250px;
+    }
+    .card-coyote-exploE{
+        width:250px;
     }
     /* =====Paquete 3 =====*/
     .tamaño-cardR{
