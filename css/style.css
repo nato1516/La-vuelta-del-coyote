@@ -197,7 +197,7 @@
 }
 /*=============================================HEADER=================================================*/
 header{
-    background: url(../IMG/fondo.png) no-repeat;
+    background: url(../IMG/fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1355,7 +1355,7 @@ footer{
 ========================================================================================================
 ======================================================================================================== */
 .fondo-galeria{
-    background: url(../IMG/fondo-galeria.png) no-repeat;
+    background: url(../IMG/fondo-galeria.jpg) no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
@@ -2504,6 +2504,7 @@ option{
 }
 
 @media screen and (max-width: 768px) {
+
     .logo-img{
         width: 50px;
         height: 53px;
@@ -3277,6 +3278,9 @@ option{
 
 }
 @media screen and (max-width: 550px){
+    header{
+        height: 600px;
+    }
     .fondo-inscripcio{
         height: 600px;
     }
@@ -3821,6 +3825,7 @@ option{
 }
 }
 @media screen and (max-width: 340px) {
+   
     .fondo-inscripcio{
         height: 500px;
     }
