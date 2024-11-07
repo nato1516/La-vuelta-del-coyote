@@ -1,0 +1,1680 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* IMPORTACIÓN DE FUENTES */
+@font-face {
+    font-family: 'Ranade';
+    src: url(../Fuentes/Ranade_Complete/Ranade_Complete/Fonts/TTF/Ranade-Variable.ttf);
+}
+
+@font-face {
+    font-family: 'Supreme';
+    src: url(../Fuentes/Supreme_Complete/Supreme_Complete/Fonts/TTF/Supreme-Variable.ttf);
+}
+
+/* VARIABLES */
+:root {
+    /*============ VARIABLES PARA LOS COLORES ================*/
+    --Color-Fondo-Oscuro: #261b15;
+    --Color-Fondo-Claro: #fcf7f1;
+    --Tipografia-Oscura: #261b15;
+    --Tipografia-Clara: #fff;
+    --Color-Botones: #6c8c4a;
+    --Color-Detalles: #ca873b;
+    /*============= VARIABLES PARA LOS TEXTOS =================*/
+    --Fuente-H1: "Ranade", sans-serif;
+    --Fuente-H2: "Ranade", sans-serif;
+    --Fuente-Parrafos: "Supreme", sans-serif;
+    --Fuente-Botones: "Supreme", sans-serif;
+    /*============= VARIABLES PARA LOS FONT WEIGHT =================*/
+    --Font-Bold: 800;
+    --Font-Regular: 200;
+    --Font-Medium: 400;
+    /*============= VARIABLES PARA LOS TAMAÑOS DE LOS BOTONES =================*/
+    /*============= WEB =================*/
+    --Ancho-boton-web: 210px;
+    --Alto-boton-web: 64px;
+    --Tamano-fuente-boton-web: 25px;
+    --Padding-boton-web: 10px;
+    --Redondeo-boton-web: 15px;
+    /*============= TABLET =================*/
+    --Ancho-boton-tablet: 180px;
+    --Alto-boton-tablet: 60px;
+    --Tamano-fuente-boton-tablet: 20px;
+    /* --Margen-boton-tablet:13px; */
+    --Redondeo-boton-tablet: 10px;
+    /*============= MOVIL =================*/
+    --Ancho-boton-movil: 190px;
+    --Alto-boton-movil: 55px;
+    --Tamano-fuente-boton-movil: 18px;
+    /* --Margen-boton-movil:10px; */
+    --Redondeo-boton-movil: 15px;
+}
+
+
+/*========================== INICIO Estilos Header =======================*/
+header {
+    height: auto;
+    padding: 2rem 0 !important;
+}
+
+/*========================== FIN Estilos Header =======================*/
+
+
+/*===================== INICIO Estilos del navBar ====================*/
+
+.nav_options {
+    gap: 3rem;
+}
+
+.nav_menu {
+    background-color: var(--Color-Fondo-Claro);
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.50);
+    border-bottom: #fcf7f1 solid 1px;
+    padding: 0 11rem 0 14rem !important;
+    z-index: 1000;
+}
+
+.nav_direction {
+    font-family: var(--Fuente-navBar);
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--Color-Botones);
+}
+
+.nav_direction:hover {
+    color: var(--Color-Detalles) !important;
+}
+
+#logo {
+    width: 175px;
+    height: 99px;
+}
+
+/*===================== FIN Estilos del navBar ====================*/
+
+/*===================== INICIO Estilos del contenido Banner ====================*/
+
+/*=== Este es el contenedor del banner ===*/
+.banner_content {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: auto;
+    margin-top: 2.5rem;
+}
+
+
+/*== Todo lo que esta dentro del carrusel  ==*/
+/* .articulo_carousel{
+    overflow: visible !important;
+} */
+/*=== ESTE ES EL CONTENEDOR DE TODO LO QUE ETA DENTRO DEL CARROUSEL: TEXTOS,GRANOS,IMAGEN ===*/
+.carousel_content {
+    display: flex;
+    height: 100% !important;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+    padding-left: 2rem !important;
+    padding-right: 1rem !important;
+    position: relative;
+}
+
+/*=== FIN ESTE ES EL CONTENEDOR DE TODO LO QUE ETA DENTRO DEL CARROUSEL: TEXTOS,GRANOS,IMAGEN ===*/
+
+/*========================================= TEXTOS DE BANNER ====================================================*/
+/*=== TEXTOS DEL BANNER 1 ===*/
+.texto-carousel {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem !important;
+}
+
+.h1_banner {
+    font-family: var(--Fuente-H1);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 76px;
+    color: #261B15;
+    text-transform: uppercase;
+}
+
+.texto_diferente {
+    font-family: var(--Fuente-H1);
+    font-size: 70px;
+    color: var(--Color-Detalles);
+    text-transform: uppercase;
+}
+
+.texto_diferente_2 {
+    font-family: var(--Fuente-H1);
+    font-size: 60px;
+    color: var(--Color-Detalles);
+    text-transform: uppercase;
+}
+
+.p_banner {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 19px;
+    font-weight: var(--Font-Medium);
+}
+
+.p_banner_responsive {
+    display: none;
+}
+
+/*=== FIN TEXTOS DEL BANNER 1 ===*/
+
+/*=== TEXTOS DEL BANNER 2 ===*/
+.texto_carousel_2 {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: end;
+    align-items: flex-end;
+    max-width: 800px;
+}
+
+/*=== FIN TEXTOS DEL BANNER 2 ===*/
+
+/*=== TEXTOS DEL BANNER 3 ===*/
+.texto-carousel_3 {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+/*=== FIN TEXTOS DEL BANNER 3 ===*/
+
+/*============================================= FIN TEXTOS DE BANNER ======================================*/
+
+/*========================================= IMAGENES/ILUSTRACIONES DEL BANNER ====================================================*/
+/*=== IMAGEN DE BANNER 1 ===*/
+.img-banner img {
+    width: 700px;
+    height: auto;
+}
+
+/*=== FIN IMAGEN DE BANNER 1 ===*/
+
+/*=== IMAGEN DE BANNER 2 ===*/
+
+#img_banner_2 {
+    height: 520px;
+}
+
+/*=== FIN IMAGEN DE BANNER 2 ===*/
+
+/*=== IMAGEN DE BANNER 3 ===*/
+#img_banner_3 {
+    width: 800px;
+    height: 520px;
+    margin-left: 16px;
+}
+
+.img_responsive_movil_3 {
+    display: none;
+}
+
+/*=== FIN IMAGEN DE BANNER 3 ===*/
+/*=== IMAGENES PARA BANNER EN MOVIL ===*/
+
+.img-banner-movil {
+    display: none;
+}
+
+/*=== FIN IMAGENES PARA BANNER EN MOVIL ===*/
+
+
+
+/*========================================= FIN IMAGENES/ILUSTRACIONES DEL BANNER ====================================================*/
+
+
+/*=== RAYAS DEL CAROIUSEL ===*/
+.slider_position {
+    background-color: var(--Color-Detalles) !important;
+    height: 12px !important;
+    width: 63px !important;
+    border-radius: 11px !important;
+}
+
+/*=== FIN RAYAS DEL CAROUSEL ===*/
+
+/*===================== Estilos de los granos ==================*/
+
+/* GRANOS PARA MOVIL Y TABLET */
+.granos_responsive_tablet {
+    display: none;
+}
+
+/* GRANOS PARA MOVIL Y TABLET */
+
+/*== GRANOS PRIMER BANNER ==*/
+.grano_uno {
+    position: absolute;
+    left: 3%;
+    top: 5%;
+}
+
+.grano_uno img {
+    width: 50px;
+    height: auto;
+}
+
+.grano_dos {
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+}
+
+.grano_dos img {
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+.granos_juntos {
+    position: absolute;
+    right: 4%;
+    bottom: 5%;
+}
+
+.granos_juntos img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+}
+
+/*== FIN GRANOS PRIMER BANNER ==*/
+
+/*== GRANOS SEGUNDO BANNER BANNER ==*/
+.grano_uno_2 {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+.grano_uno_2 img {
+    width: 58px;
+    height: auto;
+}
+
+.grano_dos_2 {
+    position: absolute;
+    left: 0%;
+    bottom: 10%;
+}
+
+.grano_dos_2 img {
+    width: 60px;
+    height: auto;
+}
+
+.granos_juntos_2 {
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+
+/*==FIN GRANOS SEGUNDO BANNER BANNER ==*/
+/*== GRANOS TERCER BANNER BANNER ==*/
+.grano_dos_3 {
+    position: absolute;
+    left: 0%;
+    bottom: 8%;
+}
+
+/*== Fin Estilos de los granos que estan el el primer banner ==*/
+
+/*== FIN DE Todo lo que esta dentro del carrusel  ==*/
+
+/* INICIO Estilos de boton VER AGENDA */
+.boton_agenda {
+    width: var(--Ancho-boton-web);
+    height: var(--Alto-boton-web);
+    background-color: var(--Color-Botones);
+    color: var(--Color-Fondo-Claro);
+    font-family: var(--Fuente-Botones);
+    font-size: var(--Tamano-fuente-boton-web);
+    padding: var(--Padding-boton-web) !important;
+    border-radius: var(--Redondeo-boton-web);
+    text-decoration: none;
+    border: none;
+    transition: .3s ease-out;
+}
+
+.boton_agenda:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.30);
+}
+
+/* FIN Estilos de boton VER AGENDA */
+
+/*===================== FIN Estilos del contenido Banner ====================*/
+
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+AGENDA
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+/* TEXTOS DE LA AGENDA */
+.h2-agenda {
+    font-family: var(--Fuente-H2);
+    font-size: 48px;
+    font-weight: var(--Font-Bold);
+    text-transform: uppercase;
+}
+
+.nov {
+    font-family: var(--Fuente-H2);
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(-90deg);
+}
+
+.numerosAgenda {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 96px;
+    color: white;
+    background-color: #6c8c4a;
+    margin-bottom: 0px !important;
+}
+
+.agenda__parrafo {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* ESTILOS DE LA AGENDA */
+.agenda__info p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#agenda {
+    padding: 50px 240px 70px 240px;
+    background-color: #FCF7F1;
+    position: relative;
+}
+
+.agenda__container {
+    gap: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+/* GRANOS CAFE */
+.granos__cafes {
+    position: absolute;
+}
+.cafesitos1 {
+    top: 0px;
+    right: 60px;
+    width: 100px;
+    transform: rotate(51.557deg);
+}
+
+.cafesitos2 {
+    bottom: 0px;
+    left: 170px;
+    width: 116px;
+    transform: rotate(-100deg);
+}
+.cafesitos3 {
+    bottom: 90px;
+    left: 150px;
+    width: 70px;
+    transform: rotate( 10deg);
+}
+
+/* ESTILOS DE LAS CARTAS */
+/* carta generalidades */
+.generalidades {
+    background: url(../img/Generalidades.png);
+    background-size: cover;
+    width: 1009px;
+    height: 170px;
+    padding: 0;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25%;
+}
+
+.button__agenda {
+    background-color: #6c8c4ac8;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px 0px 20px 0px;
+    width: 610px;
+    border-radius: 100px 100px 15px 15px;
+}
+
+/* demas cartas */
+.carta__agenda {
+    position: relative;
+    text-align: center;
+    width: 1009px;
+    height: 170px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fecha {
+    display: flex;
+    padding: 12px 50px;
+}
+
+.fecha p {
+    padding-left: 15px;
+    padding-right: 35px;
+    border-radius: 0px 75px 75px 0px;
+}
+
+.carta__agenda h3 {
+    position: absolute;
+    left: 0px;
+    top: 35%;
+}
+
+.carta__agenda .button__agenda {
+    position: absolute;
+    left: 270px;
+    bottom: 0;
+}
+
+.Nov12 {
+    background: url(../img/Noviembre12.png);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10%;
+
+}
+
+.Nov13 {
+    background: url(../img/Noviembre13.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10%;
+}
+
+.Nov14 {
+    background: url(../img/Noviembre14.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 25%;
+}
+/* 
+CARACTERISTICAS DE LA SECCION DE EXPOSITORES */
+.botones-expo {
+    margin-bottom: -4rem;
+}
+
+.EXPOSITORES {
+    background-color: var(--Color-Fondo-Oscuro);
+    height: auto;
+    padding-bottom: 90PX;
+}
+
+.container-expositores {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.titulo-expositores {
+    font-family: var(--Fuente-H2);
+    font-size: 48;
+    color: var(--Tipografia-Clara);
+    font-weight: var(--Font-Bold);
+    padding-top: 40px;
+    text-align: center;
+}
+
+.info-expositores {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 25px;
+    color: var(--Tipografia-Clara);
+    font-weight: 200;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.card-expositores {
+    background: url(../img/Fondo-expositores.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    width: 287px;
+    height: 394px;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 120px 5px 0px;
+}
+
+.img-expositores {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+}
+
+.foto-expositores {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+}
+
+/* texto */
+.nombre-expositor {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 14px;
+    font-weight: var(--Font-Bold);
+}
+
+.profesion-expositor {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 14px;
+    font-weight: var(--Font-Bold);
+}
+
+.text-expositores p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.text-expositores {
+    width: 219px;
+    height: 216px;
+    margin: -120px auto 0px;
+
+}
+
+.bandera-expositores {
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-expo {
+    height: auto;
+}
+
+.contendor-expositores-titu {
+    max-width: 1440px;
+}
+
+/* CARACTERISTICAS DE LA SECCION DE MOBIL SOBRE LOS EXPOSITORES */
+/* ESTA ES LA ESTETICA */
+.info-expo-movil {
+    display: flex;
+}
+
+.ver-mas {
+    width: 65%;
+    margin-left: 115px;
+    display: flex;
+    justify-content: left;
+}
+
+.ver-mas p {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 14px;
+    margin-left: 10px;
+    color: #373737;
+}
+
+a {
+    text-decoration: none;
+}
+
+.CARDSS {
+    padding: 15PX 0;
+}
+
+.info-expo-movil p {
+    margin: 0;
+}
+
+.texto-expositores-movil {
+    width: 384px;
+    margin: 20px 5px 0px;
+}
+
+.nombre-expositor-movil {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 16px;
+    font-weight: var(--Font-Bold);
+}
+
+.profesion-expositor-movil {
+    font-family: var(--Fuente-Parrafos);
+    font-size: 16px;
+    font-weight: var(--Font-Bold);
+}
+
+#Expositores-movil {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.581);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: trasform .3s ease-in-out;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.cierre {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    color: #fff;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.imagen-expositores-movil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px 10px 0px 5px;
+}
+
+.texto-expositor-movil p {
+    font-size: 16px;
+
+}
+
+.card-expositores-movil {
+    background-color: #ca873b;
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    width: 523px;
+    height: 158px;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.card-comentario-grande {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(88, 90, 90);
+    border-radius: 30px;
+}
+
+.texto-comentario-grande {
+    margin: 10% 10px 0;
+}
+
+.EXPOSITORES-movil {
+    display: none;
+}
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+METRICAS
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+
+/* Incio estilos Metricas */
+.cfondo{
+    fill: var(--Color-Fondo-Claro);
+}
+.cfront, .cfront2, .cfront3{
+    fill: none;
+    stroke: #6C9C4A;
+    stroke-width: 40;
+    stroke-dasharray: 0 100; 
+    transform: rotate(-180deg);
+    transform-origin: 50%;
+    z-index: 1;
+    transition: all ease-in-out 1.2s;
+}
+.cback, .cback2, .cback3{
+    fill: none;
+    stroke: #261B15;
+    stroke-width: 40;
+    stroke-dasharray: 50 100;
+    transform: rotate(-180deg); 
+    transform-origin: 50%;
+    z-index: -1;
+} 
+.alcance-section{
+    background-color: var(--Color-Fondo-Claro);
+    color: var(--Tipografia-Oscura);
+}
+.alcance-section h2{
+    font-size: 35px;
+    font-family: var(--Fuente-H2);
+    font-weight: 700;
+}
+.alcance-section p{
+    padding: 0px 180px;
+    font-family: var(--Fuente-Parrafos);
+    font-weight: 500;
+    font-size: 25px;
+}
+.participantes{
+    background-color: var(--Color-Detalles);
+    color: var(--Tipografia-Clara);
+    font-weight: 500;
+    font-size: 23px;
+    font-family: var(--Fuente-Parrafos);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.18);
+    padding: 18px 50px;
+    cursor: default !important;
+}
+
+
+
+
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\  COMENTARIOS    /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+.container-comentarios {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titulo-comentario {
+    font-family: var(--Fuente-H2);
+    font-size: 48px;
+    color: var(--Tipografia-Clara);
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.comentarios {
+    background-color: var(--Color-Fondo-Oscuro);
+}
+
+.card-comentario {
+    background-color: var(--Color-Fondo-Claro);
+    width: 343px;
+    height: 227px;
+    display: flex;
+    border-radius: 20px;
+    margin: 15px 5px 0px;
+}
+
+.img-comentarios {
+    width: 70PX;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 80%;
+}
+
+.texto-comentario p {
+    font-size: 16px;
+}
+
+.texto-comentario {
+    margin-top: 20px;
+}
+
+.nombre-comentario {
+    font-family: var(--Fuente-Parrafos);
+    font-weight: var(--Font-Bold);
+}
+
+
+/* ================= MEDIA QUERY ================ */
+@media (max-width: 1467px) {
+    h2 {
+        font-size: 38px;
+    }
+
+    .nov {
+        font-size: 34px;
+    }
+
+    .agenda__parrafo {
+        font-size: 19px;
+    }
+
+    .carta__agenda h3 {
+        right: 533px;
+    }
+
+    .numerosAgenda {
+        font-size: 64px;
+    }
+
+    #agenda {
+        padding: 50px 16px 70px 16px;
+    }
+
+    .generalidades {
+        width: 633px;
+        height: 116px;
+    }
+
+    .carta__agenda {
+        width: 633px;
+        height: 116px;
+    }
+
+    .button__agenda {
+        width: 355px;
+        height: 40px;
+        padding: 5px 0px 15px 0px;
+    }
+
+    .carta__agenda .button__agenda {
+        left: 190px;
+    }
+    .cafesitos1 {
+        width: 80px;
+    }
+    
+    .cafesitos2 {
+        width: 86px;
+    }
+    .cafesitos3 {
+        width: 50px;
+    }
+}
+
+
+
+
+/*========================================= MEDIAQUERY TAMANO TABLET/ 1024PX - 768PX =========================================*/
+@media screen and (max-width: 1024px) {
+    .nav_menu {
+        padding: 0 !important;
+    }
+
+    /*===================== Estilos de los granos ==================*/
+
+    /*== GRANOS PARA MOVIL Y TABLET ==*/
+    .granos_responsive_tablet {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .granos_responsive_tablet img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* GRANOS PARA MOVIL Y TABLET */
+    /*== GRANOS PRIMER BANNER ==*/
+    .grano_uno {
+        display: none;
+    }
+
+    .grano_uno img {
+        width: 50px;
+        height: auto;
+    }
+
+    .grano_dos {
+        display: none;
+    }
+
+    .grano_dos img {
+        width: 60px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .granos_juntos {
+        display: none;
+    }
+
+    .granos_juntos img {
+        width: 120px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /*== FIN GRANOS PRIMER BANNER ==*/
+
+    /*== GRANOS SEGUNDO BANNER BANNER ==*/
+    .grano_uno_2 {
+        display: none;
+    }
+
+    .grano_uno_2 img {
+        width: 58px;
+        height: auto;
+    }
+
+    .grano_dos_2 {
+        display: none;
+    }
+
+    .grano_dos_2 img {
+        width: 60px;
+        height: auto;
+    }
+
+    .granos_juntos_2 {
+        display: none;
+    }
+
+
+    /*==FIN GRANOS SEGUNDO BANNER BANNER ==*/
+    /*== GRANOS TERCER BANNER BANNER ==*/
+    .grano_dos_3 {
+        display: none;
+    }
+
+    /*== Fin Estilos de los granos que estan el el primer banner ==*/
+    /*========================================= TEXTOS DE BANNER ====================================================*/
+    /*=== TEXTOS DEL BANNER 1 ===*/
+    .texto-carousel {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: .6rem !important;
+    }
+
+    .h1_banner {
+        font-family: var(--Fuente-H1);
+        font-weight: 700;
+        font-size: 42px;
+        line-height: normal;
+        color: #261B15;
+        text-transform: uppercase;
+    }
+
+    .texto_diferente {
+        font-family: var(--Fuente-H1);
+        font-size: 42px;
+        color: var(--Color-Detalles);
+        text-transform: uppercase;
+    }
+
+    .texto_diferente_2 {
+        font-family: var(--Fuente-H1);
+        font-size: 42px;
+        color: var(--Color-Detalles);
+        text-transform: uppercase;
+    }
+
+    .p_banner {
+        display: none;
+    }
+
+    .p_banner_responsive {
+        display: block;
+        font-family: var(--Fuente-Parrafos);
+        font-size: 19px;
+        font-weight: var(--Font-Medium);
+    }
+
+    /*=== FIN TEXTOS DEL BANNER 1 ===*/
+
+    /*=== TEXTOS DEL BANNER 2 ===*/
+    .texto_carousel_2 {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        justify-content: end;
+        align-items: flex-end;
+        max-width: 800px;
+        gap: 1.5rem;
+    }
+
+    /*=== FIN TEXTOS DEL BANNER 2 ===*/
+
+    /*=== TEXTOS DEL BANNER 3 ===*/
+    .texto-carousel_3 {
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /*=== FIN TEXTOS DEL BANNER 3 ===*/
+
+    /*============================================= FIN TEXTOS DE BANNER ======================================*/
+
+    /*========================================= IMAGENES/ILUSTRACIONES DEL BANNER ====================================================*/
+    /*=== IMAGEN DE BANNER 1 ===*/
+    .img-banner img {
+        width: 436px;
+        height: 246px;
+    }
+
+    /*=== FIN IMAGEN DE BANNER 1 ===*/
+
+    /*=== IMAGEN DE BANNER 2 ===*/
+
+    #img_banner_2 {
+        width: 412px;
+        height: 339px;
+    }
+
+    /*=== FIN IMAGEN DE BANNER 2 ===*/
+
+    /*=== IMAGEN DE BANNER 3 ===*/
+    #img_banner_3 {
+        width: 480px;
+        height: 336px;
+    }
+
+    /*=== FIN IMAGEN DE BANNER 3 ===*/
+
+    /*========================================= FIN IMAGENES/ILUSTRACIONES DEL BANNER ====================================================*/
+    /*=== RAYAS DEL CAROIUSEL ===*/
+    .slider_position {
+        background-color: var(--Color-Detalles) !important;
+        height: 6px !important;
+        width: 32px !important;
+        border-radius: 11px !important;
+    }
+    /*=== FIN RAYAS DEL CAROUSEL ===*/
+    /****************** MEDIA QUERRY DE TABLET metricas ***************/
+    .alcance-section h2{
+        font-size: 30px;
+    }
+    .alcance-section p{
+        padding: 0px 40px;
+        font-size: 23px;
+    }
+    .Logo-Container a img{
+        width: 256px;
+        height: 102px;
+    }
+    .Menu-Principal a{
+        font-size: 13px;
+    }
+    .Redes-Sociales svg{
+        height: 23px;
+    }
+}
+
+/* ========================================= MEDIAQUERY TAMANO TABLET/ 768PX - 0PX ========================================= */
+@media screen and (max-width: 768px) {
+
+    .nav_menu {
+        padding: 0 13px !important;
+    }
+
+    /*=== ESTE ES EL CONTENEDOR DE TODO LO QUE ETA DENTRO DEL CARROUSEL: TEXTOS,GRANOS,IMAGEN ===*/
+    .carousel_content {
+        display: flex;
+        height: 100% !important;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6rem !important;
+        padding-bottom: 3rem !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        position: relative;
+        margin: 0 auto;
+        gap: 17px;
+    }
+
+    /*=== FIN ESTE ES EL CONTENEDOR DE TODO LO QUE ETA DENTRO DEL CARROUSEL: TEXTOS,GRANOS,IMAGEN ===*/
+
+    /*========================================= TEXTOS DE BANNER ====================================================*/
+    /*=== TEXTOS DEL BANNER 1 ===*/
+    .texto-carousel {
+        max-width: initial;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem !important;
+        padding: 0 10px !important;
+    }
+
+    .h1_banner {
+        font-family: var(--Fuente-H1);
+        font-weight: 700;
+        font-size: 34px;
+        line-height: normal;
+        color: #261B15;
+        text-transform: uppercase;
+    }
+
+    .texto_diferente {
+        font-family: var(--Fuente-H1);
+        font-size: 34px;
+        color: var(--Color-Detalles);
+        text-transform: uppercase;
+    }
+
+    .texto_diferente_2 {
+        font-family: var(--Fuente-H1);
+        font-size: 34px;
+        color: var(--Color-Detalles);
+        text-transform: uppercase;
+    }
+
+    .p_banner {
+        display: none;
+    }
+
+    .p_banner_responsive {
+        display: block;
+        font-family: var(--Fuente-Parrafos);
+        font-size: 18px;
+        font-weight: var(--Font-Medium);
+    }
+
+    /*=== FIN TEXTOS DEL BANNER 1 ===*/
+
+    /*=== TEXTOS DEL BANNER 2 ===*/
+    .texto_carousel_2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-end;
+        max-width: initial;
+        width: 70%;
+        gap: 1.5rem;
+    }
+
+    /*=== FIN TEXTOS DEL BANNER 2 ===*/
+
+    /*=== TEXTOS DEL BANNER 3 ===*/
+    .texto-carousel_3 {
+        max-width: initial;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /*=== FIN TEXTOS DEL BANNER 3 ===*/
+
+    /*============================================= FIN TEXTOS DE BANNER ======================================*/
+
+    /*========================================= IMAGENES/ILUSTRACIONES DEL BANNER ====================================================*/
+    /*=== IMAGEN DE BANNER 1 ===*/
+    .img-banner {
+        display: none;
+    }
+
+    .img-banner-movil {
+        display: block;
+        width: 100%;
+    }
+
+    .img-banner-movil img {
+        width: 449px;
+        height: 253px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    /*=== FIN IMAGEN DE BANNER 1 ===*/
+
+    /*=== IMAGEN DE BANNER 2 ===*/
+    .banner_2 {
+        width: 100%;
+    }
+
+    #img_banner_2 {
+        width: 412px;
+        height: 339px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*=== FIN IMAGEN DE BANNER 2 ===*/
+
+    /*=== IMAGEN DE BANNER 3 ===*/
+    #img_banner_3 {
+        display: none;
+    }
+
+    .img_responsive_movil_3 {
+        display: block;
+        width: 100%;
+    }
+
+    #img_banner_3_movil {
+        width: 448px;
+        height: 313px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*=== FIN IMAGEN DE BANNER 3 ===*/
+
+    /*========================================= FIN IMAGENES/ILUSTRACIONES DEL BANNER ====================================================*/
+    /*============================================== INICIO Estilos de boton VER AGENDA ===============================*/
+    .boton_agenda {
+        width: var(--Ancho-boton-movil);
+        height: var(--Alto-boton-movil);
+        background-color: var(--Color-Botones);
+        color: var(--Color-Fondo-Claro);
+        font-family: var(--Fuente-Botones);
+        font-size: var(--Tamano-fuente-boton-movil);
+        padding: var(--Padding-boton-movil) !important;
+        border-radius: var(--Redondeo-boton-movil);
+        text-decoration: none;
+        border: none;
+        transition: .3s ease-out;
+        margin: 0 auto;
+    }
+
+    .button_space {
+        margin-bottom: 3.1rem;
+    }
+
+    .button_space_3 {
+        margin-bottom: 6.5rem;
+    }
+
+    /* ====================================FIN BOTON VER AGENDA ==========================================*/
+
+    /*==================================== INICIO ESTILOS DE GANOS TAMANO MOVIL ====================================*/
+    /*== GRANOS PARA MOVIL Y TABLET ==*/
+    .granos_responsive_tablet {
+        display: block;
+        position: absolute;
+        top: 8%;
+        left: 0;
+    }
+
+    .granos_responsive_tablet img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* GRANOS PARA MOVIL Y TABLET */
+
+    /******************** MEDIA QUERRY DE CELULAR metricas *********************/
+    .Logo-Container a img{
+        width: 192px;
+        height: 72px;
+    }
+    .Menu-Principal a{
+        font-size: 15px;
+    }
+    .Redes-Sociales svg{
+        height: 26px;
+    }
+    .copyright, .info-diseño{
+        font-size: 20px;
+    }
+    footer{
+        background: url(../IMG/Footer\ bg\ phone.jpg);
+    }
+    .Redes-Sociales{
+        max-height: 27px;
+    }
+    .alcance-section{
+        gap: 2px !important;
+    }
+    .svg-container{
+        transform: scale(.8);
+        margin-bottom: 0px !important;
+    }
+}
+
+
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+@media (max-width: 950px) {
+    .container-comentarios {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 900px) {
+    .agenda__container {
+        justify-content: center;
+    }
+
+    .Nov12,
+    .Nov13,
+    .Nov14,
+    .generalidades {
+        margin: initial;
+    }
+    .granos__cafes{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .info-expositores {
+        font-size: 18px;
+    }
+
+    .EXPOSITORES {
+        display: none;
+    }
+
+    .EXPOSITORES-movil {
+        display: block;
+        background-color: var(--Color-Fondo-Oscuro);
+    }
+
+    .card-expositores-movil {
+        background: url(../img/fondo\ 1\ movil.png);
+        background-size: cover;
+    }
+
+    .card-expositores {
+        width: 400px;
+        height: 520px;
+        margin: 65px 0px 0;
+    }
+
+    .img-expositores {
+        top: -180px;
+    }
+
+    .foto-expositores {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-top: -100px;
+    }
+
+    .text-expositores p {
+        margin: 10px;
+    }
+
+    .bandera-expositores {
+        margin-top: 20px;
+    }
+
+    .text-expositores {
+        margin-top: -170px;
+    }
+
+    .container-comentarios {
+        width: 98%;
+    }
+}
+
+.EXPOSITORES-movil {
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .button__agenda {
+        width: 250px;
+    }
+
+    .carta__agenda .button__agenda {
+        left: 70px;
+    }
+
+    .numerosAgenda {
+        font-size: 35px;
+    }
+
+    .fecha p {
+        padding: 0px 25px 0px 10px;
+    }
+
+    .carta__agenda h3 {
+        top: 77px;
+        left: 50px;
+    }
+}
+@media (max-width: 550px) {
+    .card-expositores-movil {
+        background-color: #ca873b;
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-position: center;
+        width: 90%;
+        height: auto;
+        position: relative;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .EXPOSITORES-movil {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CARDSS {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-expositores {
+        font-size: 16px;
+    }
+
+    .texto-expositores-movil {
+        width: 90%;
+    }
+
+    .card-expositores {
+        width: 355px;
+        height: 500px;
+    }
+
+    .img-expositores {
+        top: -180px;
+    }
+
+    .foto-expositores {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+    }
+
+    .text-expositores p {
+        margin: 10px;
+    }
+
+    .bandera-expositores {
+        margin-top: 20px;
+    }
+
+    .text-expositores {
+        margin-top: -170px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .info-expo-movil {
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+    }
+
+    .CARDSS {
+        padding: 30px 0;
+    }
+
+    .CARDSS p {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .imagen-expositores-movil {
+        margin: -50px;
+    }
+
+    .texto-expositores-movil {
+        margin-top: 50px;
+    }
+
+    .ver-mas {
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    .card-expositores {
+        width: 230px;
+        height: 500px;
+        margin: 0;
+    }
+
+    .img-expositores {
+        top: -140px;
+    }
+
+    .foto-expositores {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: -80px;
+    }
+
+    .text-expositores p {
+        margin: 10px;
+        font-size: 13px;
+    }
+
+    .light-box {
+        background-color: rgba(0, 0, 0, 0.807);
+    }
+
+    .cierre {
+        right: 10px;
+        top: 8px;
+    }
+
+    .text-expositores {
+        margin-top: -140px;
+    }
+
+    .card-comentario {
+        background-color: var(--Color-Fondo-Claro);
+        width: 343px;
+        height: 290px;
+        display: flex;
+        border-radius: 20px;
+        margin: 15px 5px 0px;
+    }
+
+    .titulo-comentario {
+        font-size: 34px;
+    }
+
+    .texto-comentario p {
+        font-size: 14px;
+        margin: 0px 10px 8px;
+    }
+    /******************** MEDIA QUERRY DE CELULAR metricas *********************/
+    .participantes{
+        padding: 10px 10px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\
+    AGENDA
+    /\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+    
+    .h2-agenda{
+        font-size: 30px ;
+    }
+
+    .card-expositores {
+        width: 230px;
+        height: 385px;
+        margin: 55px 0px 0px;
+    }
+
+    .img-expositores {
+        top: -90px;
+    }
+
+    .foto-expositores {
+        width: 120px;
+        height: 120px;
+        margin-top: -80px;
+    }
+
+    .cierre {
+        right: 10px;
+        top: 8px;
+    }
+
+    .text-expositores {
+        margin-top: -90px;
+    }
+
+    .card-comentario {
+        background-color: var(--Color-Fondo-Claro);
+        width: 270px;
+        height: 250px;
+        display: flex;
+        border-radius: 20px;
+        margin: 15px 5px 0px;
+    }
+
+    .info-expositores {
+        margin-bottom: 25px;
+    }
+    /******************** MEDIA QUERRY DE CELULAR metricas *********************/
+    .alcance-section p{
+        padding: 0px 20px;
+    }
+    
+}
+
+
+/* FIN DE LAS CARACTERISTICAS DE LA SECCION DE EXPOSITORES */
