@@ -1451,6 +1451,9 @@ METRICAS
     width: 100%;
 }
 @media (max-width: 600px) {
+    .h2-agenda{
+        font-size: 30px ;
+    }
     .button__agenda {
         width: 250px;
     }
@@ -1473,6 +1476,9 @@ METRICAS
     }
 }
 @media (max-width: 550px) {
+    .h2-agenda{
+        font-size: 30px ;
+    }
     .card-expositores-movil {
         background-color: #ca873b;
         background-repeat: repeat-x;
@@ -1535,6 +1541,9 @@ METRICAS
 
 
 @media (max-width: 390px) {
+    .h2-agenda{
+        font-size: 30px ;
+    }
     .info-expo-movil {
         flex-direction: column;
         justify-content: center;
