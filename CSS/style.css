@@ -1542,7 +1542,7 @@ METRICAS
 
 @media (max-width: 390px) {
     .h2-agenda{
-        font-size: 30px ;
+        font-size: 20px ;
     }
     .info-expo-movil {
         flex-direction: column;
@@ -1638,7 +1638,7 @@ METRICAS
     /\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
     
     .h2-agenda{
-        font-size: 30px ;
+        font-size: 20px ;
     }
 
     .card-expositores {
